@@ -191,3 +191,9 @@ $ sudo apt-get install -f
 ```
 Following https://dotblogs.com.tw/shaynling/2020/08/05/233356
 ```
+
+21. grub list
+----------
+```
+awk -F\' '$1=="menuentry " || $1=="submenu " {print i++ " : " $2}; /\smenuentry / {print "\t" i-1">"j++ " : " $2};' /boot/grub/grub.cfg
+```
