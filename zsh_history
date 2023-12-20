@@ -1,0 +1,3291 @@
+: 1692954847:0;sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+: 1692954855:0;chsh -s $(which zsh)
+: 1692954863:0;exit
+: 1692954870:0;ls
+: 1692954878:0;cd /usr/local
+: 1692954880:0;cd
+: 1692954889:0;vim ~/.zshrc
+: 1692955211:0;source ~/.zshrc
+: 1692955214:0;vim ~/.zshrc
+: 1692955216:0;go
+: 1692955308:0;man socket
+: 1692955379:0;tar xf vim
+: 1692955381:0;rm vim
+: 1692955387:0;vim ~/.vim/colors/kolor.vim
+: 1692955389:0;ls
+: 1692955392:0;vim
+: 1692955439:0;sudo reboot
+: 1692955505:0;sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison\
+sudo apt-get install gcc\
+sudo apt-get install libncurses5-dev\
+sudo apt-get install bison\
+sudo apt-get install flex\
+sudo apt-get install libssl-dev\
+sudo apt-get install libelf-dev\
+sudo apt-get install gedit\
+sudo apt-get update\
+sudo apt-get upgrade
+: 1692955531:0;sudo apt purge --autoremove gedit
+: 1692955543:0;openssl version
+: 1692955568:0;uname -a
+: 1692955574:0;wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.4.12.tar.xz
+: 1692955593:0;sudo apt-get install fakeroot build-essential kernel-package libncurses5 libncurses5-dev
+: 1692955601:0;tar xf linux-6.4.12.tar.xz
+: 1692955614:0;ls /boot/config-`uname -r`
+: 1692955617:0;cd linux-6.4.12
+: 1692955620:0;vim /boot/config-6.2.0-26-generic
+: 1692955625:0;cp /boot/config-`uname -r` ./.config
+: 1692955628:0;make menuconfig
+: 1692955676:0;sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev\
+: 1692955690:0;scripts/config --disable SYSTEM_TRUSTED_KEYS\
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+: 1692955698:0;nproc
+: 1692955880:0;sudo apt install ccache
+: 1692955899:0;vim ~/.zshrc
+: 1692955945:0;soure ~/.zshrc
+: 1692955950:0;source ~/.zshrc
+: 1692955955:0;which g++
+: 1692955972:0;which gcc
+: 1692955979:0;echo $SHELL
+: 1692955984:0;vim ~/.zshrc
+: 1692956000:0;ccache
+: 1692956041:0;ls /usr/lib/ccache/bin
+: 1692956043:0;ls /usr/lib/ccache/
+: 1692956058:0;vim ~/.zshrc
+: 1692956081:0;which gcc
+: 1692956084:0;echo $CC
+: 1692956125:0;cd /usr/lib/ccache
+: 1692956126:0;ls
+: 1692956128:0;gcc
+: 1692956130:0;./gcc
+: 1692956132:0;./gcc version
+: 1692956135:0;ls -la
+: 1692956173:0;source ~/.zshrc
+: 1692956179:0;which gcc
+: 1692956182:0;cd
+: 1692956184:0;cd linux-6.4.12
+: 1692956266:0;make -j 8
+: 1692958728:0;make -j 8 V=1
+: 1692958760:0;CC="ccache gcc" make V=1
+: 1692958782:0;make -j 8
+: 1692958817:0;source ~/.zshrc
+: 1692958820:0;make -j 8 V=1
+: 1692958857:0;vim ~/.zshrc
+: 1692958880:0;echo $CC
+: 1692958936:0;CC="ccache gcc" CXX="ccache g++" make V=1
+: 1692959079:0;exit
+: 1692959082:0;cd linux-6.4.12
+: 1692959090:0;echo $USE_CCACHE
+: 1692959096:0;CC="ccache gcc" CXX="ccache g++" make V=1
+: 1692959108:0;make -j 8
+: 1692959119:0;cd
+: 1692959121:0;cd linux-6.4.12
+: 1692959121:0;ls
+: 1692959127:0;sc "Makefile" "grep CC"
+: 1692959149:0;sc "Makefile" "grep CC|grep -v CC_|grep CC"
+: 1692959179:0;echo $CC
+: 1692959181:0;exit
+: 1692959247:0;ccache 
+: 1692959253:0;ccache -s
+: 1692959264:0;ccache -M 20G
+: 1692959273:0;ls /usr/local/bin/  
+: 1692959288:0;ccache -s
+: 1692963358:0;sudo make modules_install -j 8
+: 1692963441:0;make uninstall
+: 1692963461:0;ls /lib/modules/6.4.12-TUTU
+: 1692963465:0;ls /lib/modules/
+: 1692963479:0;rm -rf /lib/modules/6.4.12-TUTU
+: 1692963481:0;sudo rm -rf /lib/modules/6.4.12-TUTU
+: 1692963484:0;ls
+: 1692965598:0;ls /var/lib
+: 1692965601:0;/lib
+: 1692965602:0;ls
+: 1692965613:0;ls /var/lib
+: 1692965623:0;ls /lib/modules
+: 1692965625:0;cd
+: 1692965625:0;ls
+: 1692965627:0;cd linux-6.4.12
+: 1692965629:0;git init .
+: 1692965634:0;git config --global init.defaultBranch main
+: 1692965638:0;git branch -m main
+: 1692965641:0;git add .
+: 1692965682:0;git commit -m 'first commit'
+: 1692965690:0;git diff .
+: 1692965698:0;git config --global user.email "jr89197@hotmail.com"
+: 1692965718:0;git config --global user.name "QbsuranAlang"
+: 1692965721:0;git add .
+: 1692965724:0;git commit -m 'first commit'
+: 1692965761:0;git commit --amend
+: 1692965809:0;git config --global core.editor "vim"
+: 1692965810:0;git commit --amend
+: 1692965841:0;sudo make modules_install -j 8
+: 1692965912:0;sudo make install -j 8
+: 1692965952:0;sudo update-grub
+: 1692965958:0;sudo reboot
+: 1692966063:0;cd linux-6.4.12
+: 1692966065:0;git diff .
+: 1692966175:0;make 
+: 1692966190:0;make -j 8
+: 1692966395:0;cd linux-6.4.12
+: 1692966402:0;sc "*" "grep accept4"
+: 1692966417:0;cd linux-6.4.12
+: 1692966426:0;sc "*" "getsockname"
+: 1692966451:0;cd ..
+: 1692966451:0;ls
+: 1692966474:0;mkdir soures
+: 1692966485:0;tar xvf linux-6.4.12.tar.xz -C soures
+: 1692966495:0;cd ..
+: 1692966496:0;cd src
+: 1692966496:0;ls
+: 1692966500:0;cd soures
+: 1692966502:0;ls
+: 1692966531:0;mb soures linux-src
+: 1692966533:0;mv soures linux-src
+: 1692966536:0;cd linux-src
+: 1692966537:0;ls
+: 1692966538:0;cd linux-6.4.12
+: 1692966545:0;sc "*" "grep accept4"
+: 1692966547:0;cd
+: 1692966550:0;cd linux-src
+: 1692966551:0;sc "*" "grep getsockname"
+: 1692967974:0;make
+: 1692968304:0;make -j 8
+: 1692968405:0;cd /usr/include
+: 1692968417:0;sc "*.h" "grep __NR"
+: 1692968611:0;sc "*.h" "grep syscall"
+: 1692968625:0;sc "*.h" "grep syscall|grep -v SPDX"
+: 1692968635:0;sc "*.h" "grep syscall|grep -v SPDX|grep syscall"
+: 1692968746:0;exit
+: 1692969020:0;sc "*.h" "grep SYS_ACCEPT"
+: 1692969024:0;cd net
+: 1692969025:0;sc "*.h" "grep SYS_ACCEPT"
+: 1692969031:0;cd ../include
+: 1692969032:0;sc "*.h" "grep SYS_ACCEPT"
+: 1692969343:0;cd ..
+: 1692969346:0;make -j 8
+: 1692969550:0;cd snap
+: 1692969551:0;cd ..
+: 1692969552:0;ls
+: 1692969555:0;cd linux-src
+: 1692969562:0;sc "*" "grep struct proto_ops"
+: 1692969566:0;sc "*" "grep struct\ proto_ops"
+: 1692969633:0;make -j 8
+: 1692974523:0;ls /boot
+: 1692974538:0;ls
+: 1692974540:0;cd bo
+: 1692974542:0;cd /boot
+: 1692974542:0;ls
+: 1692974550:0;cd linux-6.4.12
+: 1692974577:0;ls /var/lib/mo  
+: 1692974565:0;ls *-TUTU
+: 1692974596:0;rm -rf *-TUTU /lib/modules/6.4.12-TUTU
+: 1692974598:0;sudo rm -rf *-TUTU /lib/modules/6.4.12-TUTU
+: 1692974605:0;sudo update-grub
+: 1692974614:0;ls /boot
+: 1692974636:0;sudo reboot
+: 1692974673:0;cd linux-
+: 1692974675:0;cd linux-6.4.12
+: 1692974678:0;make -j 8
+: 1692974703:0;uname -r
+: 1692974707:0;ls /boot
+: 1692974725:0;sudo make modules_install -j 8
+: 1692974739:0;cd linux-6.4.12
+: 1692974743:0;make menuconfig
+: 1692974766:0;sc "Makefile" "grep TUTU"
+: 1692974796:0;sudo make install -j 8
+: 1692974832:0;sudo update-grub
+: 1692974838:0;sudo reboot
+: 1692974909:0;uname -a
+: 1692974910:0;uname -r
+: 1692974912:0;ls
+: 1692974919:0;vim
+: 1692974924:0;vim a.c
+: 1692974949:0;vim ~/.vimrc
+: 1692974960:0;ls ~/.vim
+: 1692974985:0;vim ~/.vimrc
+: 1692974994:0;vim a.c
+: 1692975043:0;gcc a.c -o a
+: 1692975044:0;./a
+: 1692975052:0;dmesg -w
+: 1692975054:0;sudoo dmesg -w
+: 1692975057:0;sudo dmesg -w
+: 1692975059:0;./a
+: 1692975087:0;rm a.c a
+: 1692975087:0;ls
+: 1692975090:0;cd linux-6.4.12
+: 1692975091:0;ls
+: 1692975117:0;cd ..
+: 1692975122:0;vim a.c
+: 1692975145:0;gcc a.c -o a
+: 1692975147:0;./a
+: 1692975149:0;strace ./a
+: 1692975173:0;ls
+: 1692975173:0;s
+: 1692975175:0;rm a a.c
+: 1692975176:0;ls
+: 1692975256:0;cd linux-6.4.12
+: 1692975261:0;sc "*" "accept4"
+: 1692975266:0;sc "*" "grep accept4"
+: 1692975269:0;ls
+: 1692975272:0;cd linux-6.4.12
+: 1692976348:0;ls
+: 1692976352:0;cd linux-src
+: 1692976355:0;cd net
+: 1692976358:0;cd linux-6.4.12/net
+: 1692976368:0;sc "*.h" "grep sock_no_connec("
+: 1692976372:0;sc "*.h" "grep sock_no_connect\("
+: 1692976375:0;cd ..
+: 1692976377:0;cd include
+: 1692976379:0;sc "*.h" "grep sock_no_connect\("
+: 1692976413:0;cd ../net
+: 1692976416:0;sc "*.c" "grep sock_no_connect\("
+: 1692977185:0;pwd
+: 1692977189:0;cd ..
+: 1692977194:0;sc "*.c" "grep struct\ proto"
+: 1692977213:0;cd net
+: 1692977216:0;sc "*.h" "grep struct\ proto"
+: 1692977298:0;sc "*.c" "grep nfc_llcp_send_connect"
+: 1692977400:0;sc "*.c" "grep inet_dgram_connect"
+: 1692977729:0;cd ..
+: 1692977742:0;sc "*" "grep struct\ proto\ "
+: 1692978698:0;cd linux-src
+: 1692978700:0;cd linux-6.4.12
+: 1692978701:0;sc "*" "grep struct\ proto\ "
+: 1692978713:0;cd net
+: 1692978718:0;sc "*.c" "grep sctp_inet_connect"
+: 1692978972:0;sc "*.h" "grep inet_dgram_connect"
+: 1692978979:0;cd ../include
+: 1692978983:0;sc "*.h" "grep inet_dgram_connect"
+: 1692979697:0;cd ../net
+: 1692979700:0;sc "*.c" "grep inet_stream_connect"
+: 1692980352:0;sc "*.h" "grep sock_no_connect"
+: 1692980355:0;cd ../include
+: 1692980356:0;sc "*.h" "grep sock_no_connect"
+: 1692980465:0;cd ../net
+: 1692980468:0;sc "*.c" "grep ip6_datagram_connect_v6_only"
+: 1692980592:0;cd ..
+: 1692980599:0;sc "*" "grep .connect\ "
+: 1692980618:0;sc "*" "grep .connect\ |grep \=|grep .connect\ "
+: 1692980713:0;sc "*" "grep -A 2 .connect\ "
+: 1692981182:0;git diff .
+: 1692981387:0;vim include/uapi/linux/net.h
+: 1692981398:0;vim ~/.vimrc
+: 1692981408:0;vim include/uapi/linux/net.h
+: 1692981541:0;sc "*.h" "grep struct\ sock\ "
+: 1692981569:0;sc "*.c" "grep tcp_v4_connect"
+: 1692981762:0;exit
+: 1692983118:0;find . -name 'inet_comment'
+: 1692983120:0;find . -name 'inet_comment.h'
+: 1692983127:0;find . -name 'inet_common.h'
+: 1692983316:0;cd net
+: 1692983320:0;sc "*.h" "grep tcp_v4_connect"
+: 1692983325:0;cd ../include
+: 1692983326:0;sc "*.h" "grep tcp_v4_connect"
+: 1692983480:0;sc "*.h" "grep inet_hash_connect"
+: 1692983763:0;cd ..
+: 1692983770:0;man getsockname
+: 1692983776:0;sc "*" "grep getsockname"
+: 1692984637:0;pwd
+: 1692984639:0;exit
+: 1692984645:0;cd linux-src/linux-6.4.12
+: 1692984646:0;sc "*" "grep getsockname"
+: 1692984657:0;exit
+: 1692985764:0;cd /usr/include
+: 1692986058:0;cd ..
+: 1692986060:0;cd
+: 1692986066:0;cd linux-src/linux-6.4.12
+: 1692986071:0;sc "*.c"  "grep compat_sys_socketcall"
+: 1692986313:0;sc "*"  "grep compat_sys_socketcall"
+: 1692986629:0;ar t /usr/lib/libc.a | grep write.o
+: 1692986823:0;vim /usr/include/unistd.h
+: 1692986848:0;ls /usr/include/asm-generic/unistd.h
+: 1692986850:0;vim /usr/include/asm-generic/unistd.h
+: 1692987175:0;sc "*.c" "grep OP_GETSOCKNAME"
+: 1692987195:0;ls
+: 1692987198:0;vim a.c
+: 1692987297:0;exit
+: 1692987302:0;ls
+: 1692987304:0;cd linux-
+: 1692987305:0;cd linux-6.4.12
+: 1692987309:0;sc "*" "grep user_port"
+: 1692987342:0;gcc a.c -o 
+: 1692987344:0;gcc a.c -o a
+: 1692987347:0;vim a.c
+: 1692987356:0;gcc a.c -o a
+: 1692987358:0;vim a.c
+: 1692987373:0;gcc a.c -o a
+: 1692987374:0;./a
+: 1692987378:0;strace ./a
+: 1692987924:0;cd
+: 1692987928:0;cd linux-src/linux-6.4.12
+: 1692987932:0;sc "*" "grep user_port"
+: 1692987936:0;exit
+: 1692988220:0;cd linux-src/linux-6.4.12
+: 1692988228:0;sc "*.c" "grep ip4_datagram_connect"
+: 1692988819:0;cd net
+: 1692988822:0;sc "*.c" "grep inet_sk_get_local_port_range"
+: 1692989026:0;sc "*.c" "grep inet_dgram_connect"
+: 1692989379:0;sc "*.h" "grep ip4_datagram_connect"
+: 1692989381:0;cd ..
+: 1692989382:0;cd in
+: 1692989385:0;cd include
+: 1692989387:0;sc "*.h" "grep ip4_datagram_connect"
+: 1692990109:0;cd ../net
+: 1692990112:0;sc "*.c" "grep udp_lib_get_port"
+: 1692990187:0;sc "*.h" "grep udp_v4_get_port"
+: 1692990262:0;sc "*.c" "grep tcp_v4_get_port"
+: 1692990340:0;sc "*.h" "grep udp_v6_get_port"
+: 1692990479:0;sc "*.h" "grep udp_lib_get_port"
+: 1692990482:0;cd ../include
+: 1692990483:0;sc "*.h" "grep udp_lib_get_port"
+: 1692990717:0;make -j 8
+: 1692990729:0;exit
+: 1692990751:0;cd ../net
+: 1692990756:0;sc "*.c" "grep udp_v6_get_port"
+: 1692990765:0;sc "*.c" "grep sctp_get_port"
+: 1692990799:0;pwd
+: 1692990855:0;make -j 8
+: 1692990892:0;sc "*.h" "grep sctp_inet_connect"
+: 1692990898:0;cd ../include
+: 1692990899:0;sc "*.h" "grep sctp_inet_connect"
+: 1692991803:0;cd ../net
+: 1692991807:0;sc "*.c" "grep inet_csk_get_port"
+: 1692991946:0;sc "*.c" "grep get_port\("
+: 1692992731:0;make -j 8 2> ~/log.txt
+: 1692992734:0;cd
+: 1692992735:0;ls
+: 1692992755:0;tail -F log.txt
+: 1692992857:0;make -j 8 2> ~/log.txt
+: 1692992862:0;cat log.txt
+: 1692992874:0;tail -F log.txt
+: 1692993641:0;make -j 8 2> ~/log.txt
+: 1692993643:0;tail -F log.txt
+: 1692993983:0;cd linux-src
+: 1692993985:0;cd linux-6.4.12
+: 1692994006:0;sc "*.h" "grep struct\ proto_ops"
+: 1692994015:0;cd include
+: 1692994016:0;sc "*.h" "grep struct\ proto_ops"
+: 1692994021:0;cd ../net
+: 1692994022:0;sc "*.h" "grep struct\ proto_ops"
+: 1692994033:0;cd ../include
+: 1692994033:0;sc "*.h" "grep struct\ proto_ops"
+: 1692994148:0;tail -F log.txt
+: 1692994151:0;make -j 8 2> ~/log.txt
+: 1692994153:0;tail -F log.txt
+: 1692994458:0;exit
+: 1692994740:0;cd linux-src/linux-6.4.12
+: 1692994744:0;cd net
+: 1692994753:0;sc "*.c" "grep -i accept"
+: 1692994760:0;sc "*.c" "grep -i accept4"
+: 1692994792:0;sc "*.c" "grep socketcall"
+: 1692994851:0;sc "*.c" "grep SYS_CONNECT"
+: 1692994891:0;cd ..
+: 1692994896:0;sc "*" "grep SYS_CONNECT"
+: 1692995176:0;cd linux-6.4.12
+: 1692995183:0;cd net
+: 1692995188:0;sc "*.c" "grep inet_csk_get_port"
+: 1692995426:0;sc "*.c" "grep inet_hash_connect"
+: 1692996399:0;sc "*.h" "grep no_sock"
+: 1692996410:0;sc "*.h" "grep no|grep sock"
+: 1692996432:0;cd ../include
+: 1692996434:0;sc "*.h" "grep no|grep sock"
+: 1692996451:0;cd ..
+: 1692996482:0;cd net
+: 1692996485:0;sc "*.h" "grep sock_no_connect"
+: 1692996492:0;sc "*.c" "grep sock_no_connect"
+: 1692996537:0;sc "*.h" "grep sock_no_connect"
+: 1692996542:0;cd ../include
+: 1692996543:0;sc "*.h" "grep sock_no_connect"
+: 1692996608:0;git diff .
+: 1692996751:0;cd linux-src/linux-6.4.12/net
+: 1692996757:0;ls
+: 1692996769:0;cd ipv4
+: 1692996784:0;cd ..
+: 1692996787:0;cd net
+: 1692996792:0;find . -name 'inet_hashtables.h'
+: 1692996795:0;cd ..
+: 1692996797:0;cd include
+: 1692996799:0;find . -name 'inet_hashtables.h'
+: 1692996803:0;vim ./net/inet_hashtables.h
+: 1692996809:0;exit
+: 1692996914:0;cd net
+: 1692996916:0;ls include/net/sock.h
+: 1692996921:0;cd ../
+: 1692996922:0;ls include/net/sock.h
+: 1692996924:0;vim include/net/sock.h
+: 1692996938:0;vim ~/.vimrc
+: 1692996948:0;vim include/net/sock.h
+: 1692997082:0;exit
+: 1692997169:0;vim include/uapi/linux/net.h
+: 1692997225:0;exit
+: 1692998726:0;cd linux-6.4.12
+: 1692998743:0;sc "*.c" "grep -A 1 connect_TUv1"
+: 1692998805:0;cd linux-6.4.12
+: 1692998815:0;exit
+: 1692998818:0;sc "*.c" "grep -B 1 connect_TUv1"
+: 1692999381:0;cd linux-6.4.12
+: 1692999387:0;cd net/ipv6/
+: 1692999397:0;sc "*.c" "grep -A connect_TUv1"
+: 1692999401:0;sc "*.c" "grep -B 1 connect_TUv1"
+: 1692999586:0;cd ../ipv4
+: 1692999588:0;sc "*.c" "grep -B 1 connect_TUv1"
+: 1693000026:0;cd ../ipv6
+: 1693000027:0;sc "*.c" "grep -B 1 connect_TUv1"
+: 1693000855:0;cd net
+: 1693000855:0;ls
+: 1693000866:0;cd ..
+: 1693000866:0;ls
+: 1693000868:0;cd net
+: 1693000890:0;sc "*.c" "grep -A 5 struct\ proto\ "
+: 1693000960:0;git diff .
+: 1693000981:0;ls
+: 1693000985:0;cd linux-6.4.12
+: 1693001101:0;sc "*.c" "grep connect_TUv1"
+: 1693001111:0;sc "*.c" "grep connect_TUv1|grep \="
+: 1693001151:0;sc "*.c" "grep connect_TUv1|grep \=" > ~/a.txt
+: 1693001154:0;ls
+: 1693001156:0;cd
+: 1693001156:0;ls
+: 1693001159:0;tail -F a.txt
+: 1693001168:0;exit
+: 1693001186:0;rm ~/a.txt
+: 1693001250:0;cd ..
+: 1693001257:0;sc "*.c" "grep connect_TUv1|grep \=" > ~/a.txt
+: 1693001649:0;git diff ./net/nfc/llcp_sock.c
+: 1693001661:0;git diff ./net/nfc/rawsock.c
+: 1693001666:0;git diff ./net/mptcp/protocol.c
+: 1693001672:0;git diff ./net/caif/caif_socket.c
+: 1693001678:0;git diff ./net/ipv4/tcp_ipv4.c
+: 1693001771:0;git checkout ./net/ipv4/tcp_ipv4.c
+: 1693001896:0;cd include
+: 1693001900:0;sc "*.h" "grep sock_no_"
+: 1693001931:0;cd
+: 1693001934:0;cd linux-6.4.12
+: 1693001936:0;git diff .
+: 1693002434:0;cd net
+: 1693002436:0;git diff .
+: 1693002480:0;cd ..
+: 1693002483:0;git checkout -- net/rose/af_rose.c net/sctp/protocol.c
+: 1693002485:0;cd net
+: 1693002487:0;git diff .
+: 1693002422:0;git checkout -- crypto/af_alg.c crypto/algif_aead.c crypto/algif_hash.c crypto/algif_rng.c crypto/algif_skcipher.c drivers/isdn/mISDN/socket.c drivers/net/ppp/pppoe.c net/appletalk/ddp.c net/ax25/af_ax25.c net/bluetooth/bnep/sock.c net/bluetooth/cmtp/sock.c net/bluetooth/hci_sock.c net/bluetooth/hidp/sock.c net/bluetooth/iso.c net/bluetooth/l2cap_sock.c net/bluetooth/rfcomm/sock.c net/bluetooth/sco.c net/key/af_key.c net/l2tp/l2tp_ppp.c net/llc/af_llc.c net/netrom/af_netrom.c net/phonet/socket.c net/qrtr/af_qrtr.c net/rds/af_rds.c net/rxrpc/af_rxrpc.c net/sctp/ipv6.c net/sctp/socket.c net/smc/af_smc.c net/tipc/socket.c net/xdp/xsk.c
+: 1693002539:0;sc "*" "grep connect|grep -v connect_TUv1|grep connect" > a.txt
+: 1693002564:0;cd
+: 1693002567:0;cd linux-src
+: 1693002570:0;cd linux-6.4.12
+: 1693002571:0;sc "*" "grep connect|grep -v connect_TUv1|grep connect" > a.txt
+: 1693003485:0;ls
+: 1693003488:0;tail -F a.
+: 1693003490:0;tail -F a.txt
+: 1693003521:0;cd net
+: 1693003550:0;sc "*.c" "grep \.connect"
+: 1693003571:0;sc "*.c" 'grep \.connect'
+: 1693003763:0;ls
+: 1693003767:0;rm a.txt log.txt
+: 1693003854:0;exit
+: 1693004040:0;cd ../include
+: 1693004046:0;sc "*.h" "grep no_sock"
+: 1693004260:0;cd ../net
+: 1693004262:0;git diff ./xdp/xsk.c
+: 1693004506:0;git diff .
+: 1693004909:0;cd ..
+: 1693004911:0;git diff .
+: 1693004249:0;find . -name 'xsk.c'
+: 1693005037:0;cd ..
+: 1693005038:0;cd
+: 1693005041:0;cd linux-6.4.12
+: 1693005043:0;git diff include/net/inet_hashtables.h
+: 1693005065:0;cd
+: 1693005068:0;cd linux-src
+: 1693005250:0;git diff .
+: 1693005463:0;git diff -- '*.c'
+: 1693005473:0;git diff -- '*.h'
+: 1693005560:0;git diff -- '*.c'
+: 1693005571:0;make clean
+: 1693005690:0;make -j 8
+: 1693005725:0;git diff .
+: 1693005935:0;cd
+: 1693005935:0;ls
+: 1693005942:0;make -j 8 2> ~/log.txt
+: 1693006044:0;ls /var/lib
+: 1693006052:0;ls /lib/modules
+: 1693006056:0;uname -r
+: 1693009254:0;sudo make modules_install -j 8
+: 1693009271:0;ls
+: 1693009273:0;cat log.txt
+: 1693009359:0;sc "*.c" "grep sock_no_connect_TUv1"
+: 1693009363:0;cd net
+: 1693009365:0;sc "*.c" "grep sock_no_connect_TUv1\("
+: 1693009395:0;cd ..
+: 1693009398:0;make -j 8 2> ~/log.txt
+: 1693009404:0;tail -F log.txt
+: 1693010511:0;make -j 8 2> ~/log.txt
+: 1693010528:0;tail -F log.txt
+: 1693010566:0;make -j 8 2> ~/log.txt
+: 1693010570:0;tail -F log.txt
+: 1693010683:0;sudo make modules_install -j 8
+: 1693010849:0;make -j 8 2> ~/log.txt
+: 1693010851:0;tail -F log.txt
+: 1693011181:0;make -j 8 2> ~/log.txt
+: 1693011183:0;tail -F log.txt
+: 1693011447:0;vim net/bluetooth/sco.c
+: 1693011481:0;vim net/bluetooth/iso.c
+: 1693011516:0;make -j 8 2> ~/log.txt
+: 1693011517:0;tail -F log.txt
+: 1693011646:0;vim net/caif/caif_socket.c
+: 1693011668:0;make -j 8 2> ~/log.txt
+: 1693011670:0;tail -F log.txt
+: 1693012656:0;cat l
+: 1693012657:0;cat log.txt
+: 1693012660:0;rm log.txt
+: 1693012660:0;ls
+: 1693012951:74;sudo make modules_install -j 8
+: 1693013039:0;sudo make install -j 8
+: 1693013101:0;exit
+: 1693013109:0;sudo reboot
+: 1693013181:0;uname -r
+: 1693013182:0;ls
+: 1693013183:0;./a
+: 1693013187:0;strace ./a
+: 1693013426:0;ls
+: 1693013429:0;gcc a.c -o a
+: 1693013601:0;man inet_aton
+: 1693013612:0;gcc a.c -o a
+: 1693013711:0;ls
+: 1693013715:0;gdb ./a
+: 1693013743:0;ls
+: 1693013746:0;file a
+: 1693013751:0;gcc a.c -o a
+: 1693013752:0;vim a.c
+: 1693013964:0;cd linux-6.4.12
+: 1693013967:0;make -j 8
+: 1693014169:0;sudo make install -j 8
+: 1693014217:0;sudo reboot
+: 1693014441:0;gcc a.c -o a
+: 1693014444:0;ls
+: 1693014486:0;fc
+: 1693014487:0;ls
+: 1693014499:0;mv .zsh_history .zsh_history_bad\
+strings .zsh_history_bad > .zsh_history\
+fc -R .zsh_history\
+rm ~/.zsh_history_bad
+: 1693014501:0;exit
+: 1693014507:0;gcc a.c -o a
+: 1693014511:0;strace ./a
+: 1693014591:0;cd linux-6.4.12
+: 1693014593:0;make -j 8
+: 1693014740:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693016249:0;dmesg -w
+: 1693016251:0;sudo dmesg -w
+: 1693016260:0;reboot
+: 1693016265:0;sudo reboot
+: 1693017568:0;ldd ./a
+: 1693017571:0;file a
+: 1693017578:0;sudo dmesg -w
+: 1693017580:0;./a
+: 1693017582:0;ls
+: 1693017584:0;vim a.c
+: 1693017975:0;cd linux-6.4.12
+: 1693017984:0;mv .zsh_history .zsh_history_bad\
+strings .zsh_history_bad > .zsh_history\
+fc -R .zsh_history\
+rm ~/.zsh_history_bad
+: 1693017997:0;vim fix_zsh_history
+: 1693018013:0;chmod +x ./fix_zsh_history
+: 1693018014:0;ls
+: 1693018019:0;cd linux-6.4.12
+: 1693018023:0;make -j 8
+: 1693018194:0;ls arch/x86/boot
+: 1693018203:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693018341:0;ls /boot
+: 1693018353:0;uname -r
+: 1693018358:0;sudo reboot
+: 1693018458:0;gcc a.c -o a
+: 1693018467:0;sudo dmesg -w
+: 1693018566:0;cd linux-6.4.12
+: 1693018571:0;./fix_zsh_history
+: 1693018575:0;fc
+: 1693018576:0;./fix_zsh_history
+: 1693018581:0;which fc
+: 1693018589:0;vim fix_zsh_history
+: 1693018601:0;which zsh
+: 1693018605:0;./fix_zsh_history
+: 1693018607:0;ls
+: 1693018626:0;vim ./fix_zsh_history
+: 1693018638:0;./fix_zsh_history
+: 1693018640:0;ls
+: 1693018650:0;cd linux-6.4.12
+: 1693018652:0;git diff .
+: 1693022172:0;ls /boot
+: 1693022502:0;cd linux-src/linux-6.4.12
+: 1693022512:0;sc "*.c" "grep tcp_connect\("
+: 1693022623:0;cd linux-6.4.12
+: 1693022625:0;vim tools/include/uapi/asm-generic/unistd.h
+: 1693022664:0;make -j 8
+: 1693022801:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693022915:0;ls /boot
+: 1693022920:0;uname -r
+: 1693022937:0;vim /etc/default/grub
+: 1693022957:0;var /lib/modules
+: 1693022963:0;ls /lib/modules/
+: 1693022977:0;sudo reboot
+: 1693023025:0;ls
+: 1693023028:0;gcc a.c -o a
+: 1693023033:0;strace ./a
+: 1693023050:0;git diff .
+: 1693023056:0;cd linux-6.4.12
+: 1693023057:0;ls
+: 1693023059:0;git diff .
+: 1693023076:0;sudo dmesg -w
+: 1693023080:0;cd
+: 1693023081:0;./a
+: 1693023612:0;ls
+: 1693023614:0;cd linux-6.4.12
+: 1693023616:0;make -j 8
+: 1693023732:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693023841:0;sudo reboot
+: 1693023875:0;ls
+: 1693023883:0;sudo dmesg -w
+: 1693023888:0;gcc a.c -o a
+: 1693023892:0;strace ./a
+: 1693023946:0;cd linux-6.4.12
+: 1693023948:0;cd net
+: 1693023952:0;sc "*.h" "grep "
+: 1693023954:0;sc "*.h" "grep inet_sk"
+: 1693023964:0;cd ../include
+: 1693023966:0;sc "*.h" "grep inet_sk"
+: 1693023979:0;sc "*.h" "grep inet_sk|grep define"
+: 1693024213:0;sc "*.h" "grep inet_num"
+: 1693024285:0;cd linux-6.4.12
+: 1693024296:0;cd net
+: 1693024301:0;sc "*.c" "grep inet_num"
+: 1693024593:0;cd ../net
+: 1693024597:0;sc "*.c" "grep inet_dgram_connect"
+: 1693024688:0;sc "*.c" "grep inet6_hash_connect"
+: 1693025063:0;pwd
+: 1693025065:0;cd 
+: 1693025068:0;cd linux-src/linux-6.4.12/
+: 1693025072:0;cd net
+: 1693025076:0;sc "*.h" "grep dccp_v4_connect"
+: 1693025440:0;cd ../include
+: 1693025444:0;sc "*.h" "grep inet6_hash_connect"
+: 1693025726:0;cd ..
+: 1693025730:0;make -j 8 2> ~/log.txt
+: 1693025736:0;cd
+: 1693025740:0;strace ./a
+: 1693025751:0;ifconfig
+: 1693025758:0;tcpdump -i ens33 host 1.1.1.1
+: 1693025767:0;strace ./a
+: 1693025895:0;make -j 8 2> ~/log.txt
+: 1693025899:0;cd
+: 1693025900:0;ls
+: 1693025903:0;tail -F log.txt
+: 1693025940:0;cd
+: 1693025942:0;gcc a.c -o a
+: 1693025946:0;strace ./a
+: 1693025958:0;gcc a.c -o a
+: 1693025959:0;strace ./a
+: 1693026029:0;ss -lnpt|grep 4660
+: 1693026033:0;ss -alnpt|grep 4660
+: 1693026039:0;strace ./a
+: 1693026042:0;ss -alnpt|grep 4660
+: 1693026046:0;ss -alnpt
+: 1693026049:0;ss -anpt
+: 1693026123:0;ss -anptu
+: 1693026127:0;gcc a.c -o a
+: 1693026127:0;./a
+: 1693026147:0;strace ./a
+: 1693026429:0;cd linux-src/linux-6.4.12
+: 1693026432:0;cd net
+: 1693026436:0;sc "*.c" "grep ip4_datagram_connect"
+: 1693026778:0;cd net
+: 1693026784:0;sc "*.c" "grep .get_port"
+: 1693026798:0;cd linux-src/linux-6.4.12
+: 1693026801:0;sc 
+: 1693026802:0;cd net
+: 1693026816:0;sc "*" "grep get_port\("
+: 1693026928:0;gcc a.c -o a
+: 1693026934:0;ss -anptu
+: 1693026940:0;strace ./a
+: 1693026945:0;ss -anptu
+: 1693027074:0;sc "*.c" "grep inet6_dgram_ops"
+: 1693027174:0;sc "*.c" "grep inet6_register_protosw"
+: 1693027698:0;cd ..
+: 1693027715:0;find . -name 'unistd.h'
+: 1693027738:0;sc "unistd.h" "grep __NR_"
+: 1693027833:0;ls ./tools/include/uapi/asm-generic/unistd.h
+: 1693027931:0;make -j 8
+: 1693028359:0;gcc a.c -o a
+: 1693028362:0;strace ./a
+: 1693028373:0;gcc a.c -o a
+: 1693028374:0;strace ./a
+: 1693028699:0;pwd
+: 1693028701:0;cd ..
+: 1693028703:0;cd net
+: 1693028711:0;sc "*" "grep connect\)"
+: 1693028752:0;cd linux-6.4.12
+: 1693028753:0;cd net
+: 1693028757:0;cd ../..
+: 1693028760:0;cd linux-src
+: 1693028766:0;sc "*" "grep connect\("
+: 1693028775:0;cd net
+: 1693028779:0;cd linux-6.4.12/net
+: 1693028781:0;sc "*" "grep connect\("
+: 1693028870:0;sc "*" "grep connect\(|grep -v dis|grep -v _connect|grep connect\("
+: 1693029032:0;sc "*" "grep get_port\("
+: 1693029048:0;sc "*" "grep get_port\(|grep -v _get_port\(|grep get_port\("
+: 1693029054:0;exit
+: 1693029062:0;cd linux-src/linux-6.4.12/net
+: 1693029063:0;sc "*" "grep get_port\(|grep -v _get_port\(|grep get_port\("
+: 1693029168:0;sc "*.c" "grep inet_csk_get_port"
+: 1693029414:0;sc "*.c" "grep inet_dgram_connect"
+: 1693029802:0;gcc a.c -o a
+: 1693029808:0;strace ./a
+: 1693029840:0;gcc a.c -o a
+: 1693029864:0;strace ./a
+: 1693029918:0;ifconfig
+: 1693030018:0;ls
+: 1693030024:0;ifconfig
+: 1693030029:0;ls
+: 1693030030:0;./a
+: 1693030034:0;strace ./a
+: 1693030067:0;vim a.c
+: 1693030110:0;gcc a.c -o a
+: 1693030115:0;man if_nametoindex
+: 1693030118:0;vim a.c
+: 1693030123:0;gcc a.c -o a
+: 1693030124:0;./a
+: 1693030127:0;strace ./a
+: 1693030139:0;vim a.c
+: 1693030289:0;gcc a.c -o a
+: 1693030292:0;strace ./a
+: 1693030312:0;vim a.c
+: 1693030326:0;ifconfig ens33
+: 1693030335:0;ping6 www.facebook.com
+: 1693030588:0;ls
+: 1693030596:0;ifconfig ens33
+: 1693030604:0;ping6 www.facebook.com
+: 1693030626:0;ping6 www.google.com
+: 1693037983:0;cd
+: 1693037984:0;ls
+: 1693037990:0;vim a.c
+: 1693037993:0;./a
+: 1693037997:0;vim a.c
+: 1693038022:0;gcc a.c -o a
+: 1693038023:0;./a
+: 1693038026:0;vim a.c
+: 1693038050:0;cd net
+: 1693038071:0;sc "*.c" "grep register"
+: 1693038075:0;sc "*.c" "grep register\("
+: 1693038156:0;sc "*.c" "grep tcp4_proc_init"
+: 1693038171:0;sc "*.c" "grep ipv4_proc_init"
+: 1693038308:0;sc "*.c" "grep udp_prot-\>connect\("
+: 1693038330:0;sc "*.c" "grep udp_prot.connect\("
+: 1693038350:0;cd ..
+: 1693038358:0;cd net
+: 1693038364:0;sc "*.c" "grep udp_prot"
+: 1693038555:0;sc "*.c" "grep ip4_datagram_connect_TUv1"
+: 1693038605:0;sc "*.c" "grep udp_v4_get_port"
+: 1693038630:0;cd ..
+: 1693038632:0;make -j 8
+: 1693038742:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693038763:0;exit
+: 1693038868:0;sudo reboot
+: 1693038930:0;vim a.c
+: 1693038938:0;gcc a.c -o a
+: 1693038940:0;strace ./a
+: 1693038968:0;sudo dmesg -w
+: 1693039006:0;strace ./a
+: 1693039034:0;cd linux-6.4.12
+: 1693039035:0;cd net
+: 1693039071:0;sc "*.c" "grep get_port\("
+: 1693039093:0;sc "*.c" "grep get_port\(|grep -v _get_port|grep get_port\"
+: 1693039098:0;sc "*.c" "grep get_port\(|grep -v _get_port|grep get_port\("
+: 1693046135:0;cd linux-6.4.12/net
+: 1693046142:0;sc "*.c" "grep printk"
+: 1693046158:0;sc "*.c" "grep printk|grep -v _printk|grep printk"
+: 1693046171:0;sc "*.c" "grep \ printk|grep -v _printk|grep \ printk"
+: 1693046209:0;sudo dmesg -w
+: 1693046236:0;cd ../include
+: 1693046242:0;sc "*.h" "grep get_port"
+: 1693046246:0;sc "*.h" "grep get_port;"
+: 1693046249:0;sc "*.h" "grep get_port\;"
+: 1693046254:0;sc "*.h" "grep get_port"
+: 1693046407:0;cd ../ne
+: 1693046408:0;cd ../net
+: 1693046413:0;sc "*.c" "grep inet_csk_get_port"
+: 1693046511:0;exit
+: 1693046526:0;cd linux-6.4.12/net
+: 1693046551:0;sc "*.c" "grep \ .get_port"
+: 1693046694:0;sc "*.c" "grep \ .get_port|grep \=|grep \ .get_port"
+: 1693046756:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693046811:0;cd ..
+: 1693051865:0;cd linux-src/linux-6.4.12/
+: 1693051866:0;cd net
+: 1693051873:0;sc "*.h" "grep udp_v4_get_port"
+: 1693052297:0;sc "*.h" "grep ping_get_port"
+: 1693052306:0;cd ../include
+: 1693052307:0;sc "*.h" "grep ping_get_port"
+: 1693052366:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693052737:0;sc "*.h" "grep pn_sock_get_port"
+: 1693052775:0;cd ../net
+: 1693052778:0;sc "*.c" "grep pn_sock_get_port"
+: 1693053015:0;make -j 8
+: 1693053037:0;cd ../include
+: 1693053042:0;sc "*.h" "grep inet_csk_get_port"
+: 1693053075:0;make -j 8
+: 1693053080:0;make -j 8 2> ~/log.txt
+: 1693053084:0;cd
+: 1693053085:0;ls
+: 1693053087:0;tail -F log.txt
+: 1693053888:0;cd
+: 1693053891:0;gcc a.c -o a
+: 1693053955:0;./a
+: 1693054098:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693054123:0;man getsockname
+: 1693054556:0;man inet_ntop
+: 1693054944:0;gcc a.c -o a
+: 1693055021:0;./a
+: 1693055059:0;tcpdump -i ens33 -nn 'host 1.1.1.1 or host 2606:4700:4700::1001'
+: 1693055071:0;./a old 4 tcp
+: 1693055130:0;man getsockname
+: 1693055139:0;gcc a.c -o a
+: 1693055141:0;./a old 4 tcp
+: 1693055154:0;man getpeername
+: 1693055172:0;gcc a.c -o a
+: 1693055174:0;./a old 4 tcp
+: 1693055240:0;gcc a.c -o a
+: 1693055243:0;./a old 4 tcp
+: 1693055264:0;gcc a.c -o a
+: 1693055265:0;./a old 4 tcp
+: 1693055278:0;./a new 4 tcp
+: 1693055296:0;exit
+: 1693055301:0;sudo reboot
+: 1693055353:0;cd linux-6.4.12
+: 1693055357:0;ls
+: 1693055358:0;./a
+: 1693055368:0;tcpdump -i ens33 -nn 'host 1.1.1.1 or host 2606:4700:4700::1001'
+: 1693055373:0;./a old 4 tcp
+: 1693055382:0;./a old 6 tcp
+: 1693055461:0;gcc a.c -o a
+: 1693055463:0;./a old 6 tcp
+: 1693055470:0;./a new 4 tcp
+: 1693055473:0;./a new 4 udp
+: 1693055502:0;cd linux-src/linux-6.4.12
+: 1693055508:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055532:0;cd ner
+: 1693055534:0;cd net
+: 1693055535:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055558:0;cd
+: 1693055560:0;cd linux-6.4.12
+: 1693055562:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055576:0;cd net
+: 1693055579:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055582:0;exit
+: 1693055590:0;cd linux-6.4.12/net
+: 1693055591:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055901:0;sc "*.c" "grep EOPNOTSUPP"
+: 1693055911:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693055917:0;exit
+: 1693055926:0;cd linux-6.4.12/net
+: 1693055928:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693056024:0;exit
+: 1693056032:0;cd linux-6.4.12/net
+: 1693056037:0;sc "*.c" "grep get_port_TUv1"
+: 1693056663:0;exit
+: 1693056671:0;cd linux-6.4.12/net
+: 1693056675:0;sc "*.c" "grep connect_TUv1"
+: 1693057364:0;sc "*.c" "grep nfc_llcp_send_connect"
+: 1693057535:0;sc 
+: 1693057542:0;sc "*.c" "grep caif_connect_client"
+: 1693059257:0;sc "*.c" "grep udp_lib_get_port_TUv1"
+: 1693059372:0;sc "*.c" "grep inet_csk_get_port_TUv1"
+: 1693059384:0;sc "*.c" "grep inet_csk_get_port"
+: 1693059430:0;cd ../include
+: 1693059433:0;sc "*.h" "grep inet_csk_get_port"
+: 1693059709:0;sudo dmesg -w
+: 1693059738:0;cd net
+: 1693059741:0;sc "*.c" "grep ip4_datagram_connect"
+: 1693060187:0;cd ..
+: 1693060190:0;make -j 8 2> ~/log.txt
+: 1693060324:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693060442:0;sudo reboot
+: 1693060209:0;tail -F log.txt
+: 1693060562:0;gcc a.c -o a
+: 1693060563:0;./a
+: 1693060572:0;tcpdump -i ens33 -nn 'host 1.1.1.1 or host 2606:4700:4700::1001'
+: 1693060577:0;./a old 4 tcp
+: 1693060588:0;./a new 4 tcp
+: 1693060595:0;./a new 4 udp
+: 1693060625:0;sudo dmesg -w
+: 1693060627:0;./a new 4 udp
+: 1693060643:0;strace ./a new 4 udp
+: 1693061779:0;cd linux-6.4.12
+: 1693061782:0;vim .config
+: 1693061792:0;cat /sys/kernel/debug/tracing/available_events
+: 1693061795:0;sudo cat /sys/kernel/debug/tracing/available_events
+: 1693061803:0;cat /sys/kernel/debug/tracing/available_events|grep sockeet
+: 1693061806:0;sudo cat /sys/kernel/debug/tracing/available_events|grep sockeet
+: 1693061811:0;sudo cat /sys/kernel/debug/tracing/available_events|grep connect
+: 1693061864:0;sudo cat /sys/kernel/debug/tracing/available_tracers
+: 1693061877:0;cat /sys/kernel/debug/tracing/current_tracer
+: 1693061881:0;sudo cat /sys/kernel/debug/tracing/current_tracer
+: 1693061891:0;su -
+: 1693061910:0;ls
+: 1693061917:0;strace ./a new 4 udp
+: 1693061990:0;./a new 4 udp
+: 1693061999:0;./a new 4 tcp
+: 1693062005:0;./a new 4 udp
+: 1693062152:0;./a new 4 tcp
+: 1693062155:0;./a new 4 udp
+: 1693062201:0;su -
+: 1693062254:0;perf
+: 1693062260:0;sudo apt search perf
+: 1693062267:0;sudo apt install perf
+: 1693062273:0;sudo apt file perf
+: 1693062308:0;sudo apt install linux-tools-common
+: 1693062313:0;perf
+: 1693062395:0;uname -r
+: 1693062417:0;sudo apt purge --autoremove linux-tools-common
+: 1693062449:0;sudo apt install linux-tools-common
+: 1693062464:0;ls
+: 1693062470:0;sudo perf record --call-graph fp ./a 
+: 1693062480:0;perf --help
+: 1693062482:0;perf -h
+: 1693062484:0;perf 
+: 1693062502:0;sudo apt purge --autoremove linux-tools-common
+: 1693062541:0;ls
+: 1693062543:0;./a new 4 udp
+: 1693062556:0;strace -k -e trace=syscall ./a new 4 udp
+: 1693062564:0;strace ./a
+: 1693062567:0;strace ./a new 4 udp
+: 1693062577:0;strace -k -e trace=syscall_0x1c3 ./a new 4 udp
+: 1693062587:0;strace -k ./a new 4 udp
+: 1693062690:0;./a new 4 udp
+: 1693062694:0;./a new 4 tcp
+: 1693062700:0;./a new 4 udp
+: 1693062724:0;cd linux-6.4.12
+: 1693062727:0;cd net
+: 1693062731:0;sc "*.c" "grep .get_port|grep \=|grep .get_port"
+: 1693062756:0;sc "*.c" "grep .get_port\("
+: 1693062823:0;sc "*.c" "grep .get_port_TUv1\("
+: 1693062940:0;make -j 8
+: 1693063053:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693063165:0;uname -r
+: 1693063176:0;sudo reboot
+: 1693063213:0;gcc a.c -o a
+: 1693063217:0;./a new 4 udp
+: 1693063238:0;sudo dmesg -w
+: 1693063242:0;./a new 4 udp
+: 1693063309:0;cd linux-6.4.12/net
+: 1693063313:0;sc "*.c" "grep udp_v4_get_port"
+: 1693063414:0;cd ..
+: 1693063428:0;sc "*.c" "grep .get_port\("
+: 1693063433:0;cd net
+: 1693063434:0;sc "*.c" "grep .get_port\("
+: 1693063687:0;sc "*.c" "grep inet_sport"
+: 1693063848:0;sc "*.c" "grep inet-\>inet_sport"
+: 1693063920:0;cd linux-6.4.12
+: 1693063921:0;make -j 8
+: 1693064088:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693064200:0;sudo reboot
+: 1693064251:0;gcc a.c -o a
+: 1693064258:0;sudo dmesg -w
+: 1693064264:0;./a new 4 udp
+: 1693064435:0;cd linux-6.4.12
+: 1693064436:0;make -j 8
+: 1693064552:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693064673:0;sudo reboot
+: 1693064720:0;sudo dmesg -w
+: 1693064725:0;./a new 4 udp
+: 1693064748:0;cd linux-6.4.12
+: 1693064751:0;cd net
+: 1693064767:0;sc "*.c" "grep printk\("
+: 1693064778:0;sc "*.c" "grep printk\(|grep -v _printk|grep printk"
+: 1693064792:0;sc "*.c" "grep \ printk\(|grep -v _printk|grep printk"
+: 1693064908:0;cd linux-6.4.12/include
+: 1693064912:0;sc "*.h" "grep data_race"
+: 1693064947:0;vim linux/compiler.h
+: 1693065095:0;cd ..
+: 1693065097:0;make -j 8
+: 1693065216:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693065232:0;exit
+: 1693065326:0;sudo reboot
+: 1693065367:0;sudo dmesg -w
+: 1693065369:0;./a new 4 udp
+: 1693065553:0;cd linux-6.4.12/include
+: 1693065554:0;cd..
+: 1693065554:0;cd ..
+: 1693065556:0;make -j 8
+: 1693065696:0;sudo make install -j 8 && sudo update-grub
+: 1693065749:0;sudo reboot
+: 1693065785:0;sudo dmesg -w
+: 1693065788:0;./a new 4 udp
+: 1693066014:0;cd linux-6.4.12/net
+: 1693066018:0;sc "*.c"
+: 1693066021:0;sc "*.c" "grep inet_csk_get_port_TUv1"
+: 1693066240:0;sc "*.c" "grep .get_port\("
+: 1693066262:0;sc "*.c" "grep get_port_TUv1"
+: 1693066274:0;cd ../
+: 1693066277:0;cd include
+: 1693066281:0;sc "*.h" "grep get_port_TUv1"
+: 1693066440:0;cd linux-6.4.12/net
+: 1693066450:0;sc "*.c" "grep .get_port\("
+: 1693066490:0;sc "*.c" "grep .get_port_TUv1\("
+: 1693066862:0;cd ..
+: 1693066864:0;make -j 8
+: 1693066907:0;make -j 8 2> ~/log.txt
+: 1693066910:0;cd
+: 1693066913:0;tail -F log.txt
+: 1693067007:0;cd ../linux-
+: 1693067011:0;cd include
+: 1693067016:0;sc "*.h" "grep udp_lib_get_port"
+: 1693067084:0;make -j 8 2> ~/log.txt && sudo make install -j 8 && sudo update-grub
+: 1693067085:0;cd ..
+: 1693067087:0;make -j 8 2> ~/log.txt && sudo make install -j 8 && sudo update-grub
+: 1693067128:0;cd linux-6.4.12
+: 1693067129:0;cd net
+: 1693067133:0;sc "*.c" "grep get_port_TUv1"
+: 1693068000:0;cd linux-6.4.12
+: 1693068002:0;cd net
+: 1693068003:0;ls
+: 1693068040:0;sc "*.c" "grep get_port_TUv1|grep \=|grep get_port_TUv1"
+: 1693068107:0;cd linux-6.4.12/include
+: 1693068115:0;sc "*.h" "grep get_port_TUv1"
+: 1693068465:0;vim ./net/sock.h
+: 1693068477:0;vim ./net/udp.h
+: 1693068492:0;vim ./net/phonet/phonet.h
+: 1693068502:0;vim ./net/inet_connection_sock.h
+: 1693068777:0;sc "*.c" "grep get_port_TUv"
+: 1693068910:0;sc "*.c" "grep get_port_TUv1"
+: 1693068923:0;cd ../include
+: 1693068932:0;sc "*.h" "grep get_port_TUv1"
+: 1693069042:0;sc "*.c" "grep get_port_TUv1"
+: 1693069046:0;cd ..
+: 1693069052:0;sc "*" "grep get_port_TUv1"
+: 1693069101:0;cd net
+: 1693069104:0;sc "*.c" "grep autobind"
+: 1693069135:0;cd ..
+: 1693069137:0;make -j 8
+: 1693069141:0;make -j 8 2> ~/log.txt && sudo make install -j 8 && sudo update-grub
+: 1693069142:0;tail -F log.txt
+: 1693070594:0;exit
+: 1693070599:0;sudo reboot
+: 1693070712:0;ifconfig
+: 1693070714:0;ifconfig -a
+: 1693070723:0;sudo shutdown -h now
+: 1693071054:0;cd linux-6.4.12
+: 1693071057:0;git diff .
+: 1693071068:0;make -j 8
+: 1693071123:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693071149:0;ls /lib/modules
+: 1693071155:0;ls /lib/modules/6.4.12-TUTU+
+: 1693071174:0;make distclean
+: 1693071176:0;ls
+: 1693071182:0;cd /lib/modules
+: 1693071183:0;ls
+: 1693071188:0;sudo rm -rf 6.4.12-TUTU+
+: 1693071190:0;cd /boot
+: 1693071191:0;ls
+: 1693071198:0;sudo ls *TUTU*
+: 1693071202:0;sudo rm -rf *TUTU*
+: 1693071214:0;sudo update-grub
+: 1693071219:0;cp /boot/config-`uname -r` ./.config
+: 1693071223:0;make menuconfig
+: 1693071284:0;make -j 8
+: 1693071288:0;exit
+: 1693071312:0;sudo vim /etc/default/grub
+: 1693071437:0;make
+: 1693071575:0;scripts/config --disable SYSTEM_TRUSTED_KEYS\
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+: 1693071579:0;make menuconfig
+: 1693071586:0;make -j 8
+: 1693073842:0;make -k 8
+: 1693073851:0;make -j 8
+: 1693073892:0;cd linux-6.4.12
+: 1693073902:0;sc "*" "grep is\ ready"
+: 1693073909:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693073931:0;hostname
+: 1693073938:0;exit
+: 1693074021:0;cd /boot
+: 1693074021:0;ls
+: 1693074048:0;cd
+: 1693074048:0;ls
+: 1693074053:0;cd linux-6.4.12
+: 1693074054:0;ls
+: 1693074056:0;vim Ma
+: 1693074061:0;vim Makefile
+: 1693074082:0;sc "Makefile" "grep SUBLEVEL"
+: 1693074088:0;vim Makefile
+: 1693074097:0;sc "Makefile" "grep PATCHLEVEL"
+: 1693074159:0;cd linux-6.4.12
+: 1693074167:0;vim Makefile
+: 1693074206:0;ls -la
+: 1693074215:0;vim .version
+: 1693074231:0;vim Makefile
+: 1693074330:0;sc "*" "grep LOCALVERSION"
+: 1693074373:0;vim scripts/setlocalversion
+: 1693074391:0;scm_version
+: 1693074394:0;vim scripts/setlocalversion
+: 1693074480:0;ls include/config/auto.conf
+: 1693074485:0;vim include/config/auto.conf
+: 1693074313:9;vim .config
+: 1693074631:0;ks /etc/kernel/postinst.d/zz-shim
+: 1693074632:0;ls /etc/kernel/postinst.d/zz-shim
+: 1693074668:0;sc "Makefile" "grep zz-shim"
+: 1693074693:0;ls /etc/kernel/postinst.d/initramfs-tools
+: 1693074695:0;ls /etc
+: 1693074701:0;ls -la /etc
+: 1693074704:0;ls -la /
+: 1693074745:0;sudo update-grub
+: 1693074765:0;vim Makefile
+: 1693074787:0;sc "*" "grep install\:"
+: 1693074795:0;sc "Makefile" "grep install\:"
+: 1693074844:0;ls
+: 1693074852:0;sc "Makefile" "grep vmlinux"
+: 1693074993:0;cd /boot
+: 1693075000:0;ls
+: 1693075039:0;cd
+: 1693075043:0;cd linux-6.4.12
+: 1693075044:0;vim .config
+: 1693075081:0;make install -j 8
+: 1693075103:0;sc "Makefile" "grep \/boot"
+: 1693075124:0;sc "Makefile" "grep kernel-release"
+: 1693075176:0;ls /boot
+: 1693075243:0;ls
+: 1693075251:0;touch .scmversion
+: 1693075254:0;cd /boot
+: 1693075255:0;ls
+: 1693075262:0;rm -rf *TUTU*
+: 1693075264:0;sudo rm -rf *TUTU*
+: 1693075270:0;cd /lib/modules
+: 1693075271:0;ls
+: 1693075277:0;sudo rm -rf 6.4.12-TUTU+
+: 1693075288:0;sudo update-grub
+: 1693075323:0;ls
+: 1693075324:0;cd
+: 1693075327:0;cd linux-6.4.12
+: 1693075329:0;vim .co
+: 1693075335:0;vim .config
+: 1693075383:0;make -j 8 install
+: 1693075419:0;make distclean
+: 1693075428:0;cp /boot/config-`uname -r` ./.config
+: 1693075437:0;scripts/config --disable SYSTEM_TRUSTED_KEYS\
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+: 1693075440:0;make menuconfig
+: 1693075480:0;make -j 8
+: 1693075318:13;sc "Makefile" "grep LOCALVERSION"
+: 1693075493:0;ls CONFIG_LOCALVERSION_AUTO
+: 1693075497:0;ls .scmversion
+: 1693075510:0;touch .scmversion
+: 1693075517:0;vim scripts/setlocalversion
+: 1693075540:0;make clean
+: 1693075550:0;make -j 16
+: 1693075582:0;vim .config
+: 1693076274:0;uname -r
+: 1693076278:0;exit
+: 1693076298:42;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693076362:0;rm .scmversion
+: 1693076382:0;sed -i "s|CONFIG_LOCALVERSION_AUTO=.*|CONFIG_LOCALVERSION_AUTO=n|" .config
+: 1693076393:0;make LOCALVERSION= -j 8
+: 1693076400:0;make LOCALVERSION= -j 16
+: 1693076449:0;ls /boot
+: 1693076467:0;sudo rm -rf /lib/modules/6.4.12-TUTU+
+: 1693076471:0;ls /lib/modules
+: 1693076879:94;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693076983:0;sudo reboot
+: 1693077050:0;./a
+: 1693077055:0;./a new 4 tcp
+: 1693077058:0;./a new 4 udp
+: 1693077064:0;vim a.c
+: 1693077099:0;gcc a.c -o a
+: 1693077102:0;./a new 4 udp
+: 1693077108:0;vim a.c
+: 1693077162:0;./a old 4 udp
+: 1693077169:0;./a old 4 tcp
+: 1693077175:0;./a new 4 tcp
+: 1693077178:0;./a new 4 udp
+: 1693077181:0;vim a.c
+: 1693077226:0;gcc a.c -o a
+: 1693077233:0;./a new 4 tcp
+: 1693077531:0;ifconfig ens33
+: 1693077543:0;sudo systemctl restart NetworkManager
+: 1693077545:0;ifconfig ens33
+: 1693077556:0;ping6 wwww.facebook.com
+: 1693077578:0;ifconfig
+: 1693077596:0;sudo systemctl restart NetworkManager
+: 1693077597:0;ifconfig
+: 1693077624:0;ss -lnt
+: 1693077671:0;sudo systemctl restart NetworkManager
+: 1693077674:0;ifconfig
+: 1693077684:0;ls
+: 1693077687:0;ping6 www.google.com
+: 1693077694:0;strace ./a
+: 1693077697:0;./a
+: 1693077706:0;./a old 6 tcp
+: 1693077711:0;./a old 6 udp
+: 1693077719:0;./a new 6 tcp
+: 1693077723:0;strace ./a new 6 tcp
+: 1693077735:0;./a new 6 tcp
+: 1693077766:0;cd linux-6.4.12
+: 1693077771:0;git diff .
+: 1693078026:0;cd linux-6.4.12
+: 1693078026:0;ls
+: 1693078047:0;ip a
+: 1693078228:0;sudo systemctl restart NetworkManager
+: 1693078230:0;ip a
+: 1693078246:0;sudo systemctl stop NetworkManager
+: 1693078247:0;ip a
+: 1693078256:0;ifconfig ens33
+: 1693078264:0;sudo reboot
+: 1693078316:0;exit
+: 1693078327:0;./a new 6 tcp
+: 1693078348:0;ifconfig ens33
+: 1693078378:0;cd linux-6.4.12
+: 1693078398:0;make -j 8
+: 1693078644:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693078655:0;make LOCALVERSION= -j 8
+: 1693078662:0;make LOCALVERSION= -j 16
+: 1693078686:0;cd linux-6.4.12
+: 1693078688:0;vim .config
+: 1693078698:0;sed -i "s|CONFIG_LOCALVERSION_AUTO=.*|CONFIG_LOCALVERSION_AUTO=n|" .config
+: 1693078703:0;vim .config
+: 1693078925:0;sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693079010:0;vim scripts/setlocalversion
+: 1693079061:0;sudo reboot
+: 1693079101:0;sudo vim /etc/default/grub
+: 1693079117:0;sudo update-grub
+: 1693079150:0;sudo reboot
+: 1693079277:0;sudo dmesg -w
+: 1693079280:0;./a new 6 tcp
+: 1693079335:0;cd linux-6.4.12
+: 1693079337:0;cd net
+: 1693079340:0;sc "*.c" "grep __inet_stream_connect_TUv1"
+: 1693079504:0;sc "*.c" "grep struct proto "
+: 1693079508:0;sc "*.c" "grep struct\ proto\ "
+: 1693079640:0;sc "*.c" "grep inet_stream_connect_TUv1"
+: 1693079756:0;cd ..
+: 1693079759:0;make LOCALVERSION= -j 16
+: 1693079828:0;make LOCALVERSION= -j 16 && sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693080143:0;sudo reboot
+: 1693080177:0;ls
+: 1693080184:0;sudo dmesg -w
+: 1693080187:0;./a new 6 tcp
+: 1693080311:0;cd ..
+: 1693080311:0;ls
+: 1693080312:0;cd
+: 1693080313:0;ls
+: 1693080318:0;linux-src
+: 1693080321:0;cd ..
+: 1693080323:0;rm -rf linux-src
+: 1693080328:0;cd linux-6.4.12
+: 1693080330:0;make LOCALVERSION= -j 16 && sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693080564:0;sudo reboot
+: 1693080615:0;sudo dmesg -w
+: 1693080618:0;./a new 6 tcp
+: 1693080692:0;./a old 6 tcp
+: 1693080706:0;gcc a.c -o a
+: 1693080708:0;./a new 6 tcp
+: 1693080714:0;./a new 6 udp
+: 1693080742:0;cd linux-6.4.12
+: 1693080768:0;cat ~/.zsh_history|grep printk
+: 1693080772:0;sc "*.c" "grep \ printk\(|grep -v _printk|grep printk"
+: 1693080775:0;cd net
+: 1693080775:0;sc "*.c" "grep \ printk\(|grep -v _printk|grep printk"
+: 1693080795:0;valgrind
+: 1693080802:0;sudo apt install valgrind
+: 1693080857:0;gcc a.c -o a -g
+: 1693080859:0;cd
+: 1693080865:0;gcc a.c -o a -g
+: 1693080866:0;ls
+: 1693080870:0;valgrind ./a
+: 1693080880:0;valgrind ./a new 4 tcp
+: 1693080963:0;valgrind strace ./a new 4 tcp
+: 1693080983:0;valgrind ./a new 4 tcp
+: 1693081207:0;ls /usr/include/asm/unistd.h
+: 1693081239:0;echo $(VG_PLATFORM)
+: 1693081258:0;cd /
+: 1693081262:0;sudo find . -name 'vg_syscalls.c'
+: 1693081286:0;df -h 
+: 1693081297:0;cd
+: 1693081302:0;du -h -d 1 .
+: 1693081316:0;du -h -d 1 /boot
+: 1693081321:0;sudo du -h -d 1 /boot
+: 1693081332:0;du -h -d 1 /
+: 1693081338:0;sudo du -h -d 1 /
+: 1693081348:0;cd /home
+: 1693081352:0;sudo du -h -d 1 /
+: 1693081355:0;sudo du -h -d 1 .
+: 1693081358:0;cd tutu
+: 1693081360:0;sudo du -h -d 1 .
+: 1693081394:0;vim ~/.zshrc
+: 1693081403:0;cd /usr
+: 1693081404:0;sudo du -h -d 1 .
+: 1693081414:0;cdlib
+: 1693081416:0;cd lib
+: 1693081417:0;sudo du -h -d 1 .
+: 1693081438:0;sudo du -h -d 1 .|grep G
+: 1693081486:0;cd /
+: 1693081494:0;sudo find . -name 'vki_unistd.h'
+: 1693081502:0;cd /usr/include
+: 1693081503:0;sudo find . -name 'vki_unistd.h'
+: 1693081535:0;sudo apt search valgrind
+: 1693081656:0;cd
+: 1693081657:0;valgrind ./a new 4 tcp
+: 1693081689:0;cd linux-6.4.12
+: 1693081692:0;make LOCALVERSION= -j 16 && sudo make modules_install -j 8 && sudo make install -j 8 && sudo update-grub
+: 1693081868:0;ls /lib/modules
+: 1693081877:0;cd /lib/modules
+: 1693081881:0;ls -alh
+: 1693081885:0;du -h -d 1 .
+: 1693081893:0;sudo rm -rf 6.4.12-TUTU+
+: 1693081895:0;ls /boot
+: 1693081895:0;ls
+: 1693081958:0;sudo reboot
+: 1693082106:0;sudo dmesg -w
+: 1693082109:0;./a new 6 udp
+: 1693082117:0;./a new 6 tcp
+: 1693082129:0;tcpdump -i ens33 -nn 'host 1.1.1.1 or host 2606:4700:4700::1001'
+: 1693082136:0;./a new 6 tcp
+: 1693082162:0;./a new 4 tcp
+: 1693082171:0;./a new 6 tcp
+: 1693082206:0;./a new 4 udp
+: 1693082210:0;./a new 4 tcp
+: 1693082214:0;./a new 6 udp
+: 1693082311:0;cd linux-6.4.12
+: 1693082319:0;make clean
+: 1693082371:0;ls
+: 1693082448:0;vim .config
+: 1693082469:0;make distclean
+: 1693082496:0;vim full_build
+: 1693082504:0;ls
+: 1693082505:0;cd linux-6.4.12
+: 1693082505:0;ls
+: 1693082550:0;vim full_build
+: 1693082584:0;ls
+: 1693082585:0;cd linux-6.4.12
+: 1693082585:0;ls
+: 1693082589:0;vim .config
+: 1693082606:0;cp /boot/config-`uname -r` ./.config
+: 1693082609:0;vim .config
+: 1693082710:0;ls /boot/
+: 1693082718:0;ls /boot/config-6.2.0-26-generic
+: 1693082720:0;vim /boot/config-6.2.0-26-generic
+: 1693082760:0;ls
+: 1693082785:0;cp /boot/config-6.2.0-26-generic .config
+: 1693082802:0;sed 's/CONFIG_LOCALVERSION=""/CONFIG_LOCALVERSION="-TUTU"/g' .config
+: 1693082806:0;sed 's/CONFIG_LOCALVERSION=""/CONFIG_LOCALVERSION="-TUTU"/g' .config|grep TUTU
+: 1693082896:0;.config
+: 1693082898:0;vim .config
+: 1693082644:13;make menuconfig
+: 1693083013:0;sed -i 's/# CONFIG_DEFAULT_HOSTNAME is not set/CONFIG_DEFAULT_HOSTNAME="ubuntu.tutu"/g' .config
+: 1693083026:0;vim full_build
+: 1693083291:0;make distclean
+: 1693083298:0;ls -la
+: 1693083317:0;find . -name '._*'
+: 1693083324:0;find . -name '._*' -exec rm {} \;
+: 1693083329:0;git diff .
+: 1693083345:0;vim .gitignore
+: 1693083408:0;git diff .
+: 1693083414:0;vim .gitignore
+: 1693083421:0;git diff .
+: 1693083437:0;git add .
+: 1693083451:0;git commit -m 'add a new syscall call connect_TUv1()'
+: 1693083466:0;git reset --soft HEAD^
+: 1693083479:0;chmod +x full_build
+: 1693083483:0;git add .
+: 1693083485:0;git commit -m 'add a new syscall call connect_TUv1()'
+: 1693083488:0;ls
+: 1693083490:0;./full_build
+: 1693083505:0;make distclean
+: 1693083512:0;vim full_build
+: 1693083522:0;git reset --soft HEAD^
+: 1693083524:0;git add .
+: 1693083527:0;git commit -m 'add a new syscall call connect_TUv1()'
+: 1693083530:0;./full_build
+: 1693083561:0;exit
+: 1693083542:8;vim .config
+: 1693083613:0;cd linux-6.4.12
+: 1693083614:0;ls
+: 1693083617:0;cat full_build
+: 1693083629:0;git log
+: 1693083697:5;make distclean
+: 1693083740:0;git reset --soft HEAD^
+: 1693083747:0;vim README
+: 1693083750:0;ls
+: 1693083764:0;vim README.md
+: 1693083821:0;git add .
+: 1693083824:0;git commit -m 'add a new syscall call connect_TUv1()'
+: 1693083844:0;git remote add origin git@github.com:QbsuranAlang/linux-syscalls.git
+: 1693083849:0;git push -u origin main
+: 1693083862:0;cat ~/.zshrc
+: 1693083867:0;cat ~/.ssh/authorized_keys
+: 1693083928:0;vim ~/.ssh/authorized_keys
+: 1693083938:0;cat ~/.ssh/authorized_keys
+: 1693083960:0;ssh-keygen
+: 1693084038:0;ssh-keygen -t ed25519
+: 1693084051:0;cat ~/.ssh/id_ed25519.pub
+: 1693084089:0;git push -u origin main
+: 1693084095:0;exit
+: 1693084263:0;git diff .
+: 1693084271:0;cd linux-6.4.12
+: 1693084276:0;git log
+: 1693084287:0;git diff eda0e2d 8687d4
+: 1693084300:0;git diff 8687d4 eda0e2
+: 1693084330:0;git diff 8687d4 eda0e2 > ~/connect_TUv1().patch
+: 1693084335:0;vim ~/connect_TUv1().patch
+: 1693084343:0;git diff 8687d4 eda0e2
+: 1693084359:0;ls
+: 1693084367:0;ls ~
+: 1693084381:0;exit
+: 1693084389:0;cd linux-6.4.12
+: 1693084395:0;git diff 8687d4 eda0e2
+: 1693084401:0;git diff 8687d4 eda0e2 > ~/connect_TUv1.patch
+: 1693084404:0;cd ..
+: 1693084404:0;ls
+: 1693084408:0;rm connect_TUv1
+: 1693084411:0;vim connect_TUv1.patch
+: 1693084440:0;exit
+: 1693084461:0;ls
+: 1693084508:0;cd linux-6.4.12
+: 1693084509:0;ls
+: 1693084512:0;ls patch
+: 1693084517:0;mkdir patch
+: 1693084529:0;mv ../connect_TUv1.patch path/
+: 1693084539:0;ls path
+: 1693084548:0;mkdir patch
+: 1693084553:0;mv ../connect_TUv1.patch patch/
+: 1693084555:0;ls patch
+: 1693084563:0;git diff .
+: 1693084575:0;vim .gitignore
+: 1693084585:0;git add .
+: 1693084619:0;git commit -m 'add patch directory and add connect_TUv1.patch'
+: 1693084623:0;git push -u origin main
+: 1693084627:0;ls
+: 1693084662:0;./full_build
+: 1693084700:0;make distclean
+: 1693084708:0;vim README.md 
+: 1693084728:0;git add .
+: 1693084773:0;git commit -m 'README: update README.md'
+: 1693084778:0;vim README.md
+: 1693084835:0;git reset --soft HEAD^
+: 1693084844:0;git add .
+: 1693084873:0;git commit -m 'patch: add patch directory and add connect_TUv1.patch'
+: 1693084880:0;mv patch/connect_TUv1.patch ..
+: 1693084882:0;ls patch
+: 1693084885:0;git reset --soft HEAD^
+: 1693084886:0;git add .
+: 1693084893:0;git commit -m 'patch: add patch directory'
+: 1693084903:0;mv ../connect_TUv1.patch patch
+: 1693084904:0;git add .
+: 1693084922:0;git commit -m 'patch: add connect_TUv1.patch'
+: 1693084931:0;vim README.md
+: 1693084942:0;git add .
+: 1693084956:0;git commit -m 'README: update README.md'
+: 1693085038:0;ls
+: 1693085044:0;mv patch/connect_TUv1.patch ..
+: 1693085049:0;rmdir patch
+: 1693085050:0;git diff .
+: 1693085053:0;git log
+: 1693085061:0;git reset --soft HEAD^
+: 1693085064:0;git log
+: 1693085069:0;git reset --soft HEAD^
+: 1693085073:0;vim README.md
+: 1693085085:0;git diff .
+: 1693085095:0;git log
+: 1693085108:0;git add .
+: 1693085117:0;git commit -m 'patch: add patch directory'
+: 1693085121:0;git reset --soft HEAD^
+: 1693085129:0;mkdir patch
+: 1693085133:0;vim .gitignore
+: 1693085153:0;git add .
+: 1693085155:0;git commit -m 'patch: add patch directory'
+: 1693085168:0;mv ../connect_TUv1.patch patch
+: 1693085169:0;git add .
+: 1693085182:0;git commit -m 'patch: add connect_TUv1.patch'
+: 1693085194:0;vim README.md
+: 1693085212:0;git diff .
+: 1693085238:0;cp patch/connect_TUv1.patch ../
+: 1693085242:0;rm -rf patch
+: 1693085244:0;vim README.md
+: 1693085330:0;git log
+: 1693085334:0;git reset --soft HEAD^
+: 1693085335:0;git log
+: 1693085339:0;git reset --soft HEAD^
+: 1693085341:0;git log
+: 1693085354:0;mkdir patch
+: 1693085355:0;git add .
+: 1693085362:0;git commit -m 'patch: add patch directory'
+: 1693085366:0;git log
+: 1693085371:0;git diff eda0e2
+: 1693085401:0;cat README.md
+: 1693085421:0;vim README.md
+: 1693085428:0;git log
+: 1693085431:0;git reset --soft HEAD^
+: 1693085432:0;ls
+: 1693085436:0;rm patch
+: 1693085439:0;rmdir patch
+: 1693085441:0;git diff .
+: 1693085450:0;git log
+: 1693085459:0;mkdir patch
+: 1693085460:0;git add .
+: 1693085463:0;git commit -m 'patch: add patch directory'
+: 1693085474:0;mv ../connect_TUv1.patch patch
+: 1693085476:0;git add .
+: 1693085492:0;git commit -m 'patch: add connect_TUv1.patch'
+: 1693085496:0;vim README.md
+: 1693085505:0;git add .
+: 1693085516:0;git commit -m 'README: update README.md'
+: 1693085519:0;git log
+: 1693085542:0;mv patch/connect_TUv1.patch ..
+: 1693085545:0;rmdir patch
+: 1693085548:0;vim README.md
+: 1693085554:0;git diff .
+: 1693085564:0;git log
+: 1693085566:0;git reset --soft HEAD^
+: 1693085569:0;git log
+: 1693085576:0;git reset --soft HEAD^
+: 1693085577:0;git log
+: 1693085582:0;git reset --soft HEAD^
+: 1693085583:0;git log
+: 1693085586:0;git add .
+: 1693085603:0;git commit -m 'syscall: add a new syscall named connect_TUv1()'
+: 1693085636:0;cp full_build ..
+: 1693085640:0;git reset --soft HEAD^
+: 1693085649:0;rm README.md full_build
+: 1693085650:0;ls
+: 1693085653:0;git add .
+: 1693085655:0;git commit -m 'syscall: add a new syscall named connect_TUv1()'
+: 1693085672:0;vim README.md
+: 1693085679:0;git add .
+: 1693085694:0;git commit -m 'README: add README.md'
+: 1693085704:0;mv ../full_build .
+: 1693085710:0;git add .
+: 1693085734:0;git commit -m 'other: add a script for build the kernel'
+: 1693085737:0;ls
+: 1693085744:0;mkdir patch
+: 1693085754:0;vim .gitignore
+: 1693085767:0;git add .
+: 1693085773:0;git commit -m 'patch: add patch directory'
+: 1693085788:0;cp ../connect_TUv1.patch patch
+: 1693085790:0;git add .
+: 1693085795:0;git commit -m 'patch: add connect_TUv1.patch'
+: 1693085853:0;mv patch/connect_TUv1.patch ..
+: 1693085858:0;git reset --soft HEAD^
+: 1693085881:0;git log
+: 1693085889:0;git reset --soft HEAD^
+: 1693085896:0;git add .
+: 1693085911:0;git commit -m 'others: add a script for build the kernel'
+: 1693085920:0;ls patch
+: 1693085922:0;git log
+: 1693085950:0;cp full_build ..
+: 1693085954:0;rm full_build README.md
+: 1693085959:0;rmdir patch
+: 1693085960:0;ls
+: 1693085974:0;vim .gitignore
+: 1693086020:0;git add .
+: 1693086037:0;git commit -m 'syscall: add a new syscall named connect_TUv1()'
+: 1693086047:0;git diff .
+: 1693086050:0;git log
+: 1693086057:0;git reset --soft HEAD^
+: 1693086061:0;git log
+: 1693086063:0;git reset --soft HEAD^
+: 1693086065:0;git log
+: 1693086068:0;git add .
+: 1693086070:0;git commit -m 'syscall: add a new syscall named connect_TUv1()'
+: 1693086089:0;vim README.md
+: 1693086102:0;git add .
+: 1693086107:0;git commmit -m 'README: add README.md'
+: 1693086110:0;git commit -m 'README: add README.md'
+: 1693086127:0;cp ../full_build .
+: 1693086128:0;git add .
+: 1693086133:0;git commit -m 'others: add a script for build the kernel'
+: 1693086136:0;ls
+: 1693086142:0;vim .gitignore
+: 1693086169:0;git add .
+: 1693086189:0;git commit -m '.gitignore: remove *.patch and add ._*'
+: 1693086205:0;mkdir patch
+: 1693086207:0;git add .
+: 1693086214:0;git commit -m 'patch: add patch directory'
+: 1693086225:0;cp ../connect_TUv1.patch patch
+: 1693086227:0;git add .
+: 1693086236:0;git commit -m 'patch: add connect_TUv1.patch'
+: 1693086288:0;./full_build
+: 1693090341:0;sudo reboot
+: 1693090382:0;ls
+: 1693090386:0;./a new 6 udp
+: 1693090392:0;./a new 6 tcp
+: 1693090398:0;./a new 4 tcp
+: 1693090401:0;./a new 4 udp
+: 1693090405:0;ifconfig
+: 1693090410:0;exit
+: 1693146823:0;ls
+: 1693146831:0;cd linux-6.4.12
+: 1693146832:0;ls
+: 1693146840:0;cd ..
+: 1693146842:0;du -h -d 1.
+: 1693146845:0;du -h -d 1 .
+: 1693146853:0;cd linux-6.4.12
+: 1693146856:0;make clean
+: 1693146883:0;cd ..
+: 1693146890:0;sudo mv linux-6.4.12 /usr/src
+: 1693146893:0;cd /usr/src
+: 1693146893:0;ls
+: 1693146894:0;cd linux-
+: 1693146895:0;ls
+: 1693146897:0;cd linux-6.4.12
+: 1693146898:0;ls
+: 1693146904:0;vim full_build
+: 1693146916:0;make distclean
+: 1693146932:0;cd
+: 1693146932:0;ls
+: 1693146938:0;rm log.txt
+: 1693146938:0;ls
+: 1693146943:0;rm full_build
+: 1693146947:0;du -h -d 1 .
+: 1693146950:0;df -h .
+: 1693146954:0;exit
+: 1693146973:0;sudo shutdown -h now
+: 1693374273:0;ls
+: 1693374276:0;cd dccp_socket_example
+: 1693374276:0;ls
+: 1693374281:0;gcc server.c
+: 1693374284:0;ls
+: 1693374285:0;rm a.out
+: 1693374289:0;gcc server.c -o server
+: 1693374293:0;gcc client.c -o client
+: 1693374299:0;gcc probe.c -o probe
+: 1693374301:0;ls
+: 1693374302:0;./server
+: 1693374312:0;tcpdump -i lo -nn
+: 1693374315:0;./server
+: 1693374321:0;ss -lntp
+: 1693374322:0;ss -ln
+: 1693374327:0;ss -ln|grep LISTEN
+: 1693374346:0;ls
+: 1693374351:0;cd dccp_socket_example
+: 1693374352:0;./client
+: 1693374369:0;./client 127.0.0.1 137 42 Hello
+: 1693374377:0;tcpdump -i lo -nn
+: 1693374383:0;tcpdump -i lo -nn -w dccp.pcap
+: 1693374388:0;./client 127.0.0.1 1337 42 Hello
+: 1693374395:0;./server
+: 1693374399:0;tcpdump -i lo -nn -w dccp.pcap
+: 1693374401:0;./client 127.0.0.1 1337 42 Hello
+: 1693374419:0;ls
+: 1693374514:0;tcpdump -i lo -nn -w dccp2.pcap
+: 1693374517:0;./server
+: 1693374522:0;./client 127.0.0.1 1337 42 Hello
+: 1693374593:0;gcc client.c
+: 1693374596:0;gcc client.c -o client
+: 1693374598:0;rm a.out
+: 1693374600:0;./client 127.0.0.1 1337 42 Hello
+: 1693374623:0;gcc client.c -o client
+: 1693374603:23;tcpdump -i lo -nn -w dccp2.pcap
+: 1693374626:0;tcpdump -i lo -nn -w dccp2.pcap
+: 1693374628:0;./client 127.0.0.1 1337 42 Hello
+: 1693374639:0;./server
+: 1693374717:0;mv /usr/src/linux-6.4.12 ~
+: 1693374719:0;sudo mv /usr/src/linux-6.4.12 ~
+: 1693374823:0;ls
+: 1693374825:0;cd linux-6.4.12
+: 1693374827:0;cd net
+: 1693374841:0;sc "*.c" "grep .get_port_TUv1\("
+: 1693374852:0;sc "*.c" "grep .get_port\("
+: 1693374969:0;cd ../include/scsi
+: 1693374972:0;cd ../sctp
+: 1693374977:0;cd ..
+: 1693374978:0;ss
+: 1693374979:0;ls
+: 1693374983:0;cd net/sctp
+: 1693374988:0;sc "*.h" "grep union sctp_addr"
+: 1693374993:0;sc "*.h" "grep union\ sctp_addr"
+: 1693375273:0;cd ..
+: 1693375273:0;ls
+: 1693375282:0;mkdir sctp_socket_example
+: 1693375284:0;cd sctp_socket_example
+: 1693375286:0;vim server.c
+: 1693375311:0;vim client.c
+: 1693375345:0;ls
+: 1693375349:0;gcc server.c -o server
+: 1693375368:0;cd linux-6.4.12/inc
+: 1693375370:0;cd linux-6.4.12/include
+: 1693375371:0;ls netinet/sctp.h
+: 1693375396:0;vim sctp.h
+: 1693375401:0;ls
+: 1693375404:0;vim client.c
+: 1693375415:0;vim server.c
+: 1693375429:0;vim client.c
+: 1693375442:0;gcc server.c -o server
+: 1693375478:0;vim sctp_uio.h
+: 1693375500:0;vim sctp.h
+: 1693375512:0;gcc server.c -o server
+: 1693378052:0;cd
+: 1693378054:0;cd linux-6.4.12
+: 1693378057:0;ls /usr/src
+: 1693378058:0;ls
+: 1693378061:0;make menuconfig
+: 1693378181:0;cd
+: 1693378186:0;sudo apt search sctp
+: 1693378193:0;sudo apt-get install libsctp-dev lksctp-tools
+: 1693378199:0;ls
+: 1693378202:0;cd sctp_socket_example
+: 1693378203:0;ls
+: 1693378204:0;make
+: 1693378210:0;gcc server.c -o server
+: 1693378285:0;ls
+: 1693378287:0;gcc server.c -o server
+: 1693378312:0;ls
+: 1693378321:0;rm sctp.h sctp_uio.h 
+: 1693378381:0;gcc server.c -o server
+: 1693378403:0;gcc server.c -o server -lsctp
+: 1693378410:0;gcc client.c -o client -lsctp
+: 1693378432:0;tcpdump -i lo -nn port 62324 -w sctp.pcap
+: 1693378437:0;ls
+: 1693378440:0;cd sctp_socket_example
+: 1693378440:0;ls
+: 1693378443:0;./server
+: 1693378447:0;./client
+: 1693378558:0;cd linux-6.4.12
+: 1693378559:0;sc net
+: 1693378560:0;cd net
+: 1693378564:0;sc "*.c" "grep sctp_inet_connect"
+: 1693378870:0;exit
+: 1693379437:0;ls
+: 1693379440:0;cd linux-6.4.12
+: 1693379442:0;./block
+: 1693379443:0;cd ..
+: 1693379444:0;ls
+: 1693379446:0;./full_build
+: 1693379720:0;sc "*.c" "grep inaddr_any"
+: 1693379801:0;sc "*.h" "grep struct\ sctp_af"
+: 1693379804:0;cd ../in
+: 1693379806:0;cd ../include
+: 1693379808:0;sc "*.h" "grep struct\ sctp_af"
+: 1693380184:0;./full_build
+: 1693380598:0;ifconfig
+: 1693380603:0;ping6 www.google.com
+: 1693380707:0;cd ../net/sc
+: 1693380709:0;cd ../net/
+: 1693380714:0;cd sctp
+: 1693380731:0;sc "*.c" "grep connect"
+: 1693380743:0;exit
+: 1693381072:31;make -j 8
+: 1693381176:0;cd in
+: 1693381180:0;cd include
+: 1693381187:0;sc "*.h" "grep sctp_inet_connect"
+: 1693381224:0;cd ../
+: 1693381226:0;make -j 8
+: 1693381236:0;cat full_build
+: 1693381240:0;scripts/config --disable SYSTEM_TRUSTED_KEYS\
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+: 1693381243:0;make LOCALVERSION= -j 16
+: 1693381254:0;./full_build
+: 1693381465:0;make
+: 1693381847:0;cd net
+: 1693381851:0;sc "*.c" "grep sctp_get_port"
+: 1693381991:0;cd ..
+: 1693381996:0;make LOCALVERSION= -j 16
+: 1693382057:0;git diff .
+: 1693382148:0;make LOCALVERSION= -j 16
+: 1693382923:0;cat full_build
+: 1693383052:0;sudo reboot
+: 1693383874:0;ls
+: 1693383888:0;tcpdump -i lo -nn sctp -w sctp.pcap
+: 1693383895:0;cd sctp_socket_example
+: 1693383915:0;./server
+: 1693383917:0;./client
+: 1693384257:0;cd
+: 1693384258:0;cd linux-6.4.12
+: 1693384262:0;./full_build
+: 1693384288:0;gcc server.c -o server -lsctp
+: 1693384291:0;./server
+: 1693384295:0;tcpdump -i lo -nn sctp -w sctp.pcap
+: 1693384301:0;cd sctp_socket_example
+: 1693384304:0;./client
+: 1693384339:0;gcc server.c -o server -lsctp
+: 1693384341:0;gcc client.c -o client -lsctp
+: 1693384342:0;./server
+: 1693384350:0;gcc client.c -o client -lsctp
+: 1693384347:6;tcpdump -i lo -nn -w sctp.pcap
+: 1693384356:0;tcpdump -i lo -nn -nn
+: 1693384358:0;gcc client.c -o client -lsctp
+: 1693384364:0;./client
+: 1693384613:0;sudo reboot
+: 1693384869:0;cd sctp_socket_example
+: 1693384870:0;./server
+: 1693384874:0;./connect_TUv1.patch
+: 1693384875:0;cd sctp_socket_example
+: 1693384876:0;./client
+: 1693384884:0;sudo dmesg -w
+: 1693384887:0;./client
+: 1693385108:0;cd ../
+: 1693385110:0;cd linux-6.4.12
+: 1693385117:0;cat full_build
+: 1693385189:0;exit
+: 1693385295:0;sudo reboot
+: 1693385396:0;sudo dmesg -w
+: 1693385403:0;cd sctp_socket_example
+: 1693385410:0;./server
+: 1693385417:0;tcpdump -i lo -nn -nn
+: 1693385420:2;./client
+: 1693385676:0;cd li
+: 1693385677:0;cd lin
+: 1693385678:0;cd
+: 1693385679:0;cd linux-6.4.12
+: 1693385681:0;cat full_build
+: 1693385681:0;ls
+: 1693385746:0;exit
+: 1693385769:0;ls
+: 1693385771:0;cd sctp_socket_example/
+: 1693385771:0;ls
+: 1693385773:0;cat client.c
+: 1693385881:0;sudo reboot
+: 1693385923:0;sudo dmesg -w
+: 1693385927:0;cd sctp_socket_example
+: 1693385935:0;./server
+: 1693385939:0;./client
+: 1693386148:0;ls
+: 1693386149:0;cd ..
+: 1693386150:0;cd linux-6.4.12
+: 1693386152:0;cat full_build
+: 1693386171:0;exit
+: 1693386408:0;sudo reboot
+: 1693386468:0;cd sctp_socket_example
+: 1693386469:0;./server
+: 1693386476:0;cd sctp_socket_example
+: 1693386483:0;sudo dmesg -w
+: 1693386486:0;./client
+: 1693386497:0;tcpdump -i lo -nn -nn
+: 1693386499:0;tcpdump -i lo -nn 
+: 1693386501:0;./client
+: 1693386505:0;tcpdump -i lo -nn sctp
+: 1693386620:0;sudo dmesg -w
+: 1693386622:0;./client
+: 1693386769:0;cd .
+: 1693386770:0;cd
+: 1693386771:0;cd linux-6.4.12
+: 1693386777:0;cat full_build
+: 1693386784:0;exit
+: 1693386864:0;cd
+: 1693386865:0;cd linux-6.4.12
+: 1693386867:0;git diff .
+: 1693386893:0;cd net
+: 1693386897:0;sc "*.c" "grep sock_no_connect"
+: 1693386973:0;cd net
+: 1693386974:0;cd sctp
+: 1693386974:0;ls
+: 1693386977:0;vim socket.c
+: 1693386991:0;sudo reboot
+: 1693387027:0;sudo dmesg -w
+: 1693387032:0;cd sctp_socket_example
+: 1693387036:0;ls
+: 1693387038:0;gcc client.c -o client -lsctp
+: 1693387040:0;gcc server.c -o server -lsctp
+: 1693387041:0;./server
+: 1693387047:0;cd sctp_socket_example
+: 1693387052:0;./client
+: 1693387079:0;tcpdump -i lo -nn sctp
+: 1693387085:0;./client
+: 1693387254:0;cd linux-6.4.12
+: 1693387255:0;ls
+: 1693387257:0;cd net/sc
+: 1693387259:0;cd net/sctp
+: 1693387263:0;sc "*.c" "grep sctp_get_port"
+: 1693387268:0;sc "*.c" "grep sctp_get_port\("
+: 1693387363:0;cd
+: 1693387365:0;cd linux-6.4.12
+: 1693387367:0;cat full_build
+: 1693387560:0;sudo reboot
+: 1693387613:0;sudo dmesg -w
+: 1693387618:0;cd sctp_socket_example
+: 1693387619:0;./server
+: 1693387623:0;cd sctp_socket_example
+: 1693387628:0;tcpdump -i lo -nn sctp
+: 1693387634:0;./client
+: 1693387652:0;vim client
+: 1693387655:0;vim client.c
+: 1693387676:0;./client
+: 1693387689:0;./server 
+: 1693387697:0;tcpdump -i lo -nn sctp -w sctp.pcap
+: 1693387699:0;./client
+: 1693387738:0;ls
+: 1693387741:0;vim server.c
+: 1693387750:0;cd /usr/include
+: 1693387753:0;ls netinet
+: 1693387759:0;cd
+: 1693387760:0;cd De
+: 1693387762:0;exit
+: 1693387935:0;cd linux-6.4.12
+: 1693387939:0;make distclean
+: 1693387963:0;ls
+: 1693387966:0;git diff .
+: 1693388056:0;git add .
+: 1693388070:0;git commit -m 'connect_TUv1(): support SCTP and DDCP'
+: 1693388076:0;vim full_build
+: 1693388121:0;mv full_build fully_build
+: 1693388125:0;git diff .
+: 1693388127:0;git add .
+: 1693388141:0;git commit -m 'scripts: rename full_build to fully_build'
+: 1693388147:0;vim build
+: 1693388159:0;chmod +x build
+: 1693388161:0;git add .
+: 1693388175:0;git commit -m 'scripts: add build script'
+: 1693388179:0;git push -u origin main
+: 1693388313:0;cd ..
+: 1693388314:0;ls
+: 1693388315:0;cd connect_TUv1
+: 1693388320:0;touch main.c
+: 1693388323:0;touch tcp.c
+: 1693388325:0;touch udp.c
+: 1693388329:0;touch sctp.c
+: 1693388332:0;touch dccp.c
+: 1693388350:0;touch common.c
+: 1693388353:0;touch common.h
+: 1693388495:0;touch Makefile
+: 1693388501:0;vim Makefile
+: 1693388542:0;vim ~/.vimrc
+: 1693388549:0;vim Makefile
+: 1693388554:0;vim ~/.vimrc
+: 1693388567:0;ls
+: 1693388666:0;git clone  tar.gz
+: 1693388673:0;git clone https://github.com/nginx/nginx/archive/refs/tags/release-1.25.2.tar.gz
+: 1693388680:0;wget https://github.com/nginx/nginx/archive/refs/tags/release-1.25.2.tar.gz
+: 1693388692:0;tar xf release-1.25.2.tar.gz
+: 1693388693:0;ls
+: 1693388695:0;cd nginx-release-1.25.2
+: 1693388708:0;ls
+: 1693388711:0;./auto/configure
+: 1693388725:0;./auto/configure --without-http_rewrite_module
+: 1693388732:0;vim Makefile
+: 1693388739:0;cd objs
+: 1693388740:0;vim Makefile
+: 1693389384:0;man 3 getopt
+: 1693389394:0;make
+: 1693389407:0;ls
+: 1693389409:0;rm *.o
+: 1693389410:0;make
+: 1693389414:0;ls
+: 1693389433:0;make
+: 1693389435:0;make clean
+: 1693389523:0;make
+: 1693389550:0;ls
+: 1693389551:0;./connect_TUv1
+: 1693389647:0;man inet_pton
+: 1693389662:0;ls /usr/include/netinet
+: 1693389689:0;ls /usr/include/netinet/in.h
+: 1693389692:0;vims /usr/include/netinet/in.h
+: 1693389694:0;vim /usr/include/netinet/in.h
+: 1693389741:0;man 3 getopt
+: 1693390742:0;cd linux-6.4.12
+: 1693390743:0;git diff .
+: 1693390747:0;git log
+: 1693390752:0;git diff 18cbc9a5
+: 1693390760:0;git log
+: 1693390765:0;git diff 18cbc9a5 69486de
+: 1693390771:0;git log
+: 1693390776:0;git diff 18cbc9a5 6adf4c0
+: 1693390786:0;git diff 6adf4c0 18cbc9a5
+: 1693390796:0;man connect
+: 1693390802:0;cd linux-6.4.12/net
+: 1693390806:0;sc "*.c" "grep sock_no_connect_TUv1"
+: 1693390834:0;git diff 6adf4c0 18cbc9a5
+: 1693390843:0;touch connect_TUv1.c
+: 1693390844:0;touch connect_TUv1.h
+: 1693390969:0;ls /usr/include/syscall.h
+: 1693390971:0;vim /usr/include/syscall.h
+: 1693390977:0;vim /usr/include/sys/syscall.h
+: 1693390988:0;cd /usr/include
+: 1693390993:0;find . -name 'syscall.,h'
+: 1693390994:0;find . -name 'syscall.h'
+: 1693390998:0;vim ./x86_64-linux-gnu/bits/syscall.h
+: 1693391008:0;vim ./x86_64-linux-gnu/sys/syscall.h
+: 1693391020:0;sc "*.h" "grep connect_TUv1"
+: 1693391046:0;vim ./x86_64-linux-gnu/bits/syscall.h
+: 1693391123:0;sc "*.h" "grep __NR_connect"
+: 1693405980:0;cd
+: 1693405981:0;ls
+: 1693405982:0;cd dccp_socket_example
+: 1693405984:0;./server
+: 1693405991:0;ss -lnt
+: 1693405993:0;ss -ln
+: 1693406000:0;exit
+: 1693406634:0;cd linux-6.4.12
+: 1693406636:0;cd net
+: 1693406920:0;man strcasecmp
+: 1693408595:0;man inet_pton
+: 1693408754:0;man bind
+: 1693409419:0;man socket
+: 1693409629:0;cd
+: 1693409630:0;ls
+: 1693409631:0;cd connect_TUv1
+: 1693409631:0;make
+: 1693409714:0;man getopt
+: 1693409728:0;man 3 getopt
+: 1693409758:0;make
+: 1693410162:0;man pthread_create
+: 1693410519:0;ls /usr/include/pthread.h
+: 1693410522:0;vim /usr/include/pthread.h
+: 1693410626:0;sc "*.h" "grep THREAD|grep INIT"
+: 1693410631:0;cd /usr/include
+: 1693410635:0;sc "*.h" "grep THREAD|grep INIT"
+: 1693410677:0;man pthread_create
+: 1693411027:0;man accept4
+: 1693411205:0;maake
+: 1693411206:0;make
+: 1693411265:0;q
+: 1693411266:0;make
+: 1693411288:0;man accept4
+: 1693411410:0;make
+: 1693411438:0;man pthread_join
+: 1693411454:0;make
+: 1693411460:0;man accept4
+: 1693411483:0;make
+: 1693411491:0;man accept3
+: 1693411492:0;man accept4
+: 1693411516:0;make
+: 1693411543:0;ls /usr/include/sys/
+: 1693411545:0;ls /usr/include
+: 1693411549:0;ls /usr/include/socket.h
+: 1693411553:0;ls /usr/include/sys/
+: 1693411557:0;ls /usr/include/
+: 1693411616:0;make
+: 1693411625:0;cd /usr/include
+: 1693411630:0;sc "*.h" "grep accept4\("
+: 1693411642:0;sc "*.h" "grep accept4"
+: 1693411665:0;vim ./x86_64-linux-gnu/sys/socket.h
+: 1693411700:0;cd
+: 1693411701:0;cd connect_TUv1
+: 1693411702:0;make
+: 1693411742:0;vim /usr/include/./x86_64-linux-gnu/sys/socket.h
+: 1693411765:0;make
+: 1693411780:0;man accept
+: 1693411803:0;make
+: 1693411916:0;ls
+: 1693411918:0;./connect_TUv1
+: 1693411938:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693411945:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412050:0;make
+: 1693412067:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412149:0;make
+: 1693412150:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412222:0;make
+: 1693412224:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412243:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412263:0;gcc server.c -o server -lsctp
+: 1693412265:0;make
+: 1693412267:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412273:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412285:0;strace -p ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412290:0;strace -P ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412304:0;strace -f ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412346:0;make
+: 1693412349:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412400:0;make
+: 1693412403:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412418:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412503:0;make
+: 1693412537:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412578:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412618:0;make
+: 1693412620:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412629:0;make
+: 1693412630:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412657:0;make && ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412663:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412703:0;make && ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412704:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412714:0;make
+: 1693412716:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412718:0;make clean
+: 1693412718:0;make
+: 1693412721:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412730:0;man pthread_create
+: 1693412754:0;make
+: 1693412755:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412769:0;make
+: 1693412770:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412774:0;make
+: 1693412780:0;strace -f ./connect_TUv1 -4 -p tcp -c 1234
+: 1693412807:0;make
+: 1693412809:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412812:0;ss -lnt
+: 1693412813:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412814:0;ss -lnt
+: 1693412846:0;make
+: 1693412848:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412900:0;make
+: 1693412901:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693412930:0;man accept3
+: 1693412931:0;man accept4
+: 1693412968:0;make clean
+: 1693412969:0;make
+: 1693413043:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413046:0;strace ./connect_TUv1 -4 -p tcp -c 1234
+: 1693413073:0;make
+: 1693413075:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413111:0;make
+: 1693413112:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413174:0;man pthread_create
+: 1693413192:0;make
+: 1693413194:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413225:0;make
+: 1693413226:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413315:0;gcc server.c -o server -lsctp
+: 1693413317:0;make
+: 1693413318:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413332:0;make
+: 1693413333:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693413435:0;make clean
+: 1693413458:0;ls
+: 1693413946:0;man 3 read
+: 1693413949:0;man 2 read
+: 1693414277:0;make
+: 1693414285:0;man recv
+: 1693414311:0;make
+: 1693414827:0;man syscall
+: 1693414835:0;make
+: 1693414838:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693414939:0;make
+: 1693414941:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693414985:0;man 2 write
+: 1693415115:0;make
+: 1693415117:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693415131:0;make
+: 1693415132:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693415225:0;man getsockname
+: 1693415573:0;make
+: 1693415575:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693415611:0;make
+: 1693415612:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693415703:0;man arc4random
+: 1693415706:0;man rand
+: 1693415711:0;man 3 rand
+: 1693415728:0;man random
+: 1693415807:0;make
+: 1693415810:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693415906:0;man random
+: 1693415978:0;man 3 random
+: 1693416031:0;make
+: 1693416134:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693416162:0;make
+: 1693416164:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693416250:0;make
+: 1693416259:0;./connect_TUv1 -4 -p tcp -c 1234
+: 1693416266:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416292:0;make clean
+: 1693416294:0;make
+: 1693416295:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416353:0;make
+: 1693416354:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416368:0;make
+: 1693416370:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416375:0;make
+: 1693416377:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416414:0;make
+: 1693416415:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416428:0;make clean
+: 1693416429:0;make
+: 1693416431:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416499:0;make
+: 1693416500:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416682:0;make
+: 1693416687:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416759:0;man nanosleep
+: 1693416770:0;man usleep
+: 1693416790:0;make
+: 1693416792:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416815:0;make
+: 1693416816:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693416948:0;make
+: 1693416949:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417070:0;make
+: 1693417082:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417228:0;make
+: 1693417238:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417269:0;majke
+: 1693417270:0;make
+: 1693417272:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417286:0;make
+: 1693417288:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417332:0;make
+: 1693417420:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693417426:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693417533:0;man recv
+: 1693417565:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693417833:0;make
+: 1693417860:0;man rand
+: 1693417943:0;make
+: 1693417990:0;./connect_TUv1 -4 -p tcp -c 4321 
+: 1693417995:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693418535:0;make
+: 1693418537:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693418553:0;make
+: 1693418554:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693419159:0;make
+: 1693419440:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693419441:0;./connect_TUv1 -4 -p tcp -c 4321 
+: 1693419532:0;make
+: 1693419550:0;./connect_TUv1 -4 -p tcp -c 4321 
+: 1693419556:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693419564:0;tcpdump -i lo -nn port 1234
+: 1693419566:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693419570:0;tcpdump -i lo -nn port 4321
+: 1693419572:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693419579:0;tcpdump -i lo -nn 
+: 1693419581:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693419618:0;make
+: 1693419620:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693419635:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693419642:0;tcpdump -i lo -nn 
+: 1693419644:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693419802:0;make
+: 1693419807:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420325:0;make
+: 1693420374:0;man if_nametoindex
+: 1693420387:0;make
+: 1693420616:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420661:0;make
+: 1693420662:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420693:0;make
+: 1693420694:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420700:0;make
+: 1693420701:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420704:0;make
+: 1693420705:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420715:0;make
+: 1693420716:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693420721:0;sc "*.c" "grep inet_pton"
+: 1693421152:0;make
+: 1693421154:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693421229:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421307:0;make
+: 1693421308:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421422:0;make
+: 1693421456:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421493:0;make
+: 1693421494:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421503:0;make
+: 1693421504:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421510:0;make clean
+: 1693421511:0;make
+: 1693421512:0;make clean
+: 1693421513:0;make
+: 1693421515:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421575:0;make
+: 1693421576:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421590:0;./connect_TUv1 -4 -p tcp -c 4321 
+: 1693421593:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421706:0;make
+: 1693421707:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693421713:0;./connect_TUv1 -4 -p tcp -c 4321 
+: 1693421722:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693421727:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693421750:0;man rand
+: 1693421752:0;man 3 rand
+: 1693421770:0;make
+: 1693421772:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693421834:0;man 2 write
+: 1693421842:0;man 2 read
+: 1693422077:0;make
+: 1693422166:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422204:0;make
+: 1693422248:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422258:0;man recv
+: 1693422306:0;make
+: 1693422308:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422364:0;make
+: 1693422366:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422368:0;./connect_TUv1 -6 -p tcp -c 4321 
+: 1693422370:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422372:0;tcpdump -i lo -nn 
+: 1693422374:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693422381:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693422459:0;make clean
+: 1693422459:0;make
+: 1693422638:0;man pthread_create
+: 1693423028:0;make
+: 1693424703:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693424726:0;git diff .
+: 1693424730:0;ls
+: 1693424736:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693424744:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693424857:0;make clean
+: 1693424858:0;make
+: 1693424874:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693424881:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693424886:0;./connect_TUv1 -4 -p tcp -c 4321
+: 1693424892:0;./connect_TUv1 -6 -p tcp -c 4321
+: 1693425007:0;make
+: 1693425199:0;./connect_TUv1 -6 -p tcp -c 4321
+: 1693425208:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693425215:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693425472:0;sc "*.c" "grep tcp_main_server"
+: 1693425500:0;make
+: 1693425638:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693425644:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693425753:0;make
+: 1693425755:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693425759:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693425764:0;tcpdump -i lo -nn 
+: 1693425768:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693425779:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693425953:0;man inet_pton
+: 1693426050:0;man inet_ntop
+: 1693426180:0;make
+: 1693426255:0;sc "*.c" "grep ret\ \=\ inet_ntop"
+: 1693426258:0;sc "*.c" "grep ret\ \=\ inet_pton"
+: 1693426263:0;man inet_ntop
+: 1693426381:0;make
+: 1693426471:0;man inet_ntop
+: 1693426483:0;make
+: 1693426488:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693426491:0;tcpdump -i lo -nn 
+: 1693426493:0;./connect_TUv1 -6 -p tcp -c 4321 -n
+: 1693426503:0;./connect_TUv1 -4 -p tcp -c 4321 -n
+: 1693426514:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693426680:0;make
+: 1693426681:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693427193:0;man inet_ntop
+: 1693427398:0;make
+: 1693427464:0;man getpeername
+: 1693427530:0;sc "*.c" "grep addrlen"
+: 1693427532:0;make
+: 1693427561:0;man inet_ntop
+: 1693427618:0;make
+: 1693427674:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693484400:0;cd linux-6.4.12/
+: 1693484402:0;ls
+: 1693484407:0;make LOCALVERSION= -j 16
+: 1693484413:0;./fully_build
+: 1693494568:0;ssh t
+: 1693494580:0;ifconfig
+: 1693494596:0;sudo ip add 
+: 1693494600:0;sudo ip 
+: 1693494610:0;sudo ip address add
+: 1693494618:0;sudo ip address add 127.0.0.2 dev lo
+: 1693494620:0;ip a
+: 1693494636:0;sudo ip address del 127.0.0.2 dev lo
+: 1693494704:0;cd connect_TUv1
+: 1693494708:0;touch netdev.c
+: 1693494919:0;sudo ip -6 address del ::2 dev lo
+: 1693494925:0;sudo ip -6 address add ::2 dev lo
+: 1693494928:0;ip a
+: 1693494936:0;sudo ip -6 address del ::2 dev lo
+: 1693494938:0;ifconfig
+: 1693495003:0;man atexit
+: 1693495103:0;make
+: 1693495223:0;sc "*.c" "grep server_setup_common"
+: 1693495540:0;man if_nametoindex
+: 1693496164:0;man accept4
+: 1693496297:0;man recv
+: 1693496301:0;man send
+: 1693496703:0;ip a
+: 1693497255:0;man pthread_create
+: 1693497520:0;man 2 connect
+: 1693497559:0;sc "*.c" "grep client_port"
+: 1693497836:0;make
+: 1693497900:0;sc "*.c" "grep client_port"
+: 1693497901:0;make
+: 1693498249:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693498293:0;make
+: 1693498294:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693498408:0;make
+: 1693498409:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693498323:91;tcpdump -i lo -nn port 1069
+: 1693498416:0;tcpdump -i lo -nn
+: 1693498417:6;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693498427:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693498496:0;ifconfig
+: 1693498775:0;make
+: 1693498857:0;tcpdump -i lo -nn
+: 1693498859:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693498872:0;ss -lntp
+: 1693498876:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693499051:0;make
+: 1693499052:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693499113:0;make
+: 1693499114:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693499168:0;make
+: 1693499169:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693499214:0;make
+: 1693499228:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693499328:0;man getsockname
+: 1693499731:0;make
+: 1693499737:0;man inet_ntop
+: 1693499778:0;make
+: 1693499813:0;man inet_ntop
+: 1693499871:0;make
+: 1693500024:0;tcpdump -i lo -nn
+: 1693500025:0;./connect_TUv1 -4 -p tcp -c 1069
+: 1693500109:0;make
+: 1693500111:0;tcpdump -i lo -nn
+: 1693500113:0;make
+: 1693500114:0;./connect_TUv1 -4 -p tcp -c 1069
+: 1693500123:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500293:0;make
+: 1693500294:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500360:0;make
+: 1693500361:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500407:0;make
+: 1693500409:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500427:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693500518:0;make
+: 1693500520:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693500580:0;make 
+: 1693500583:0;make clean
+: 1693500584:0;ls -la
+: 1693500591:0;find . -name '._*'
+: 1693500595:0;find . -name '._*' -exec rm {} \;
+: 1693500604:0;cp ../linux-6.4.12/.gitignore .
+: 1693500606:0;vim .gitignore
+: 1693500609:0;ls
+: 1693500619:0;git init .
+: 1693500620:0;git add .
+: 1693500624:0;git commit -m 'first commit'
+: 1693500759:0;make
+: 1693500764:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693500793:0;make
+: 1693500794:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693500805:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500822:0;make
+: 1693500823:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693500979:0;cd linux-6.4.12/net
+: 1693500986:0;sc "*.c" "grep get_port"
+: 1693501021:0;sc "*.c" "grep get_port_TUv1"
+: 1693501052:0;sc "*.c" "grep _TUv1"
+: 1693501199:0;sc "*.c" "grep userport"
+: 1693501350:0;sc "*.c" "grep _TUv1"
+: 1693501474:0;./connect_TUv1 -4 -p tcp -c 1069 -n -6
+: 1693501483:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693501489:0;./connect_TUv1 -6 -p tcp -c 1069 
+: 1693501569:0;strace ./connect_TUv1 -6 -p tcp -c 1069 
+: 1693501582:0;ifconfig
+: 1693501591:0;make
+: 1693501593:0;strace ./connect_TUv1 -6 -p tcp -c 1069 
+: 1693501699:0;make
+: 1693501715:0;./connect_TUv1 -6 -p tcp -c 1069 
+: 1693501735:0;ip a
+: 1693501858:0;make
+: 1693501860:0;./connect_TUv1 -6 -p tcp -c 1069 
+: 1693501867:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693501877:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693501884:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693501925:0;make
+: 1693501955:0;sc "*.c" "grep sleep"
+: 1693501969:0;make
+: 1693501970:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693501980:0;make
+: 1693501981:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693501988:0;make
+: 1693501989:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693502075:0;make
+: 1693502077:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693502153:0;man recv
+: 1693502400:0;make
+: 1693502506:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693502512:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693502556:0;make
+: 1693502589:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693502611:0;make
+: 1693502612:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693502666:0;sc "*.c" "grep sizeof"
+: 1693502746:0;make
+: 1693502749:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693502785:0;make
+: 1693502786:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693502793:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693502802:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693502807:0;./connect_TUv1 -6 -p tcp -c 1069 
+: 1693573376:0;cd ssh t
+: 1693573379:0;ls
+: 1693573380:0;cd connect_TUv1
+: 1693573383:0;sc "*.c" "grep start_server"
+: 1693573487:0;make
+: 1693573593:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693573601:0;./connect_TUv1 -6 -p tcp -c 1069 -n
+: 1693573769:0;man recvfrom
+: 1693574416:0;make
+: 1693574509:0;man sendto
+: 1693574640:0;man recvfrom
+: 1693574654:0;make
+: 1693574772:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693574796:0;make
+: 1693574797:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693574805:0;tcpdump -i lo -nn
+: 1693574810:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693574816:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693575330:0;make
+: 1693575594:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693575600:0;./connect_TUv1 -4 -p udp -c 1069 
+: 1693575644:0;make
+: 1693575645:0;./connect_TUv1 -4 -p udp -c 1069 
+: 1693575677:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693576030:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576057:0;make
+: 1693576088:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576132:0;make
+: 1693576133:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576147:0;make
+: 1693576148:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576255:0;make
+: 1693576257:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576273:0;make
+: 1693576274:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576334:0;make
+: 1693576336:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576341:0;./connect_TUv1 -4 -p tcp -c 1069 
+: 1693576360:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576367:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693576429:0;make
+: 1693576430:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693576444:0;make
+: 1693576446:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693576459:0;make
+: 1693576460:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693576475:0;make
+: 1693576476:0;./connect_TUv1 -4 -p udp -c 1069
+: 1693576490:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693576502:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693576511:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693576516:0;./connect_TUv1 -4 -p udp -c 1069 
+: 1693576530:0;./connect_TUv1 -6 -p udp -c 1069 
+: 1693576636:0;make
+: 1693576637:0;./connect_TUv1 -6 -p udp -c 1069 
+: 1693576644:0;./connect_TUv1 -6 -p udp -c 1069 -n
+: 1693576826:0;make
+: 1693576855:0;./connect_TUv1 -6 -p udp -c 1069 -n
+: 1693576863:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693577089:0;make
+: 1693577097:0;man pthread_self
+: 1693577113:0;make
+: 1693577158:0;gcc --version
+: 1693577160:0;make
+: 1693577162:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693577182:0;make
+: 1693577183:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693577191:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577208:0;man pthread_self
+: 1693577252:0;man gettid
+: 1693577272:0;make
+: 1693577273:0;man gettid
+: 1693577275:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577322:0;make
+: 1693577323:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577336:0;man gettid
+: 1693577350:0;make
+: 1693577351:0;man gettid
+: 1693577353:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577383:0;make
+: 1693577384:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577396:0;make
+: 1693577396:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577558:0;make
+: 1693577560:0;./connect_TUv1 -4 -p tcp -c 1069 -n
+: 1693577576:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693577605:0;make
+: 1693577607:0;./connect_TUv1 -4 -p udp -c 1069 -n
+: 1693577620:0;make clean
+: 1693577621:0;ls
+: 1693577627:0;git add .
+: 1693577638:0;git commit -m 'TCP and UDP seems OK'
+: 1693577639:0;make
+: 1693578183:0;touch spawn.c
+: 1693578287:0;man 3 pipe
+: 1693578289:0;man 2 pipe
+: 1693578354:0;man posix_spawn_file_actions_init
+: 1693578583:0;make
+: 1693578691:0;sc "*.c" "grep system"
+: 1693579165:0;sc "*.c" "grep print_connection_info"
+: 1693579320:0;touch fileutils.c
+: 1693579513:0;man access
+: 1693580051:0;man exec
+: 1693580167:0;man 2 kill
+: 1693580354:0;make
+: 1693580461:0;man waitpid
+: 1693580478:0;make
+: 1693580586:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580592:0;ls
+: 1693580624:0;make
+: 1693580626:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580628:0;ls
+: 1693580632:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580643:0;ls
+: 1693580645:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580654:0;ls
+: 1693580657:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580679:0;make
+: 1693580680:0;./connect_TUv1 -4 -p udp -c 1069 -n -w
+: 1693580701:0;ls
+: 1693580703:0;ls *.pcap
+: 1693580706:0;rm *.pcap
+: 1693580708:0;./connect_TUv1 -4 -p udp -c 1069 -n 
+: 1693580714:0;./connect_TUv1 -4 -p udp -c 1069 
+: 1693580747:0;ls
+: 1693580749:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693580756:0;make
+: 1693580758:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693580763:0;ls
+: 1693580888:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693580896:0;ls
+: 1693580910:0;tcpdump -r UDP-2.pcap
+: 1693580943:0;make
+: 1693581004:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693581024:0;make
+: 1693581025:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693581037:0;make
+: 1693581038:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693581058:0;ls
+: 1693581067:0;tcpdump -r UDP-3.pcap
+: 1693581144:0;make
+: 1693581187:0;ls
+: 1693581191:0;ls *.pcap
+: 1693581193:0;rm *.pcap
+: 1693581194:0;make
+: 1693581198:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581209:0;ls
+: 1693581211:0;cd connect_TUv1
+: 1693581211:0;ls
+: 1693581219:0;tcpdump -r TCP-0.pcap -nn
+: 1693581237:0;make
+: 1693581257:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581267:0;tcpdump -r TCP-1.pcap -nn
+: 1693581268:0;ls
+: 1693581281:0;tcpdump -i lo -nn
+: 1693581283:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581320:0;make
+: 1693581321:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581340:0;tcpdump -r TCP-3.pcap
+: 1693581348:0;make
+: 1693581352:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581364:0;make
+: 1693581365:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581389:0;ls
+: 1693581395:0;tcpdump -i TCP-3.pcap
+: 1693581400:0;tcpdump -r TCP-3.pcap
+: 1693581442:0;/bin/bash
+: 1693581459:0;/bin/sh -c 'tcpdump -i lo -nn port 62621 -w TCP-4.pcap >/dev/null 2>&1'
+: 1693581471:0;/bin/sh -c 'tcpdump -i lo -nn -w TCP-4.pcap >/dev/null 2>&1'
+: 1693581486:0;tcpdump -r TCP-4.pcap
+: 1693581572:0;make
+: 1693581579:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581604:0;make
+: 1693581606:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581622:0;tcpdump -r TCP-8.pcap -nn
+: 1693581640:0;make
+: 1693581642:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581667:0;tcpdump -i lo -nn -w TCP-9.pcap >/dev/null 2>&1
+: 1693581473:5;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581671:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581683:0;tcpdump -r TCP-9.pcap
+: 1693581705:0;make
+: 1693581706:0;ls
+: 1693581710:0;rm *.pcap
+: 1693581713:0;make
+: 1693581714:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581725:0;tcpdump -r TCP-000.pcap -nn
+: 1693581801:0;make
+: 1693581802:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581817:0;ps aux|grep tcpdump
+: 1693581826:0;sudo kill -SIGTERM tcpdump
+: 1693581836:0;sudo pkill -SIGTERM tcpdump
+: 1693581841:0;ps aux|grep tcpdump
+: 1693581845:0;make
+: 1693581846:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693581860:0;ps aux|grep tcpdump
+: 1693581921:0;sudo pkill -SIGTERM tcpdump
+: 1693581923:0;make
+: 1693581924:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582023:0;ls
+: 1693582026:0;sudo pkill -SIGTERM tcpdump
+: 1693582028:0;make
+: 1693582029:0;ls
+: 1693582031:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582047:0;ps aux|grep tcpdump
+: 1693582140:0;make
+: 1693582160:0;mak
+: 1693582161:0;make
+: 1693582163:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582183:0;ps aux|grep tcpdump
+: 1693582200:0;make
+: 1693582201:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582213:0;tcpdump -i TCP-004.pcap -nn
+: 1693582217:0;tcpdump -r TCP-004.pcap -nn
+: 1693582226:0;tcpdump -r TCP-005.pcap -nn
+: 1693582245:0;make
+: 1693582248:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582277:0;ls
+: 1693582303:0;rm *.pcap
+: 1693582304:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582308:0;ls
+: 1693582316:0;ls /
+: 1693582319:0;ls ~
+: 1693582325:0;rm ~/TCP-9.pcap
+: 1693582326:0;ls
+: 1693582337:0;rm file
+: 1693582338:0;rm filename
+: 1693582345:0;make
+: 1693582346:0;ls
+: 1693582348:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582351:0;ls
+: 1693582358:0;tcpdump -r TCP-000.pcap
+: 1693582360:0;tcpdump -r TCP-000.pcap -nn
+: 1693582373:0;make
+: 1693582375:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582387:0;tcpdump -r  TCP-001.pcap -nn
+: 1693582432:0;make
+: 1693582434:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582446:0;tcpdump -r TCP-002.pcap -nn
+: 1693582467:0;ls
+: 1693582471:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582595:0;make
+: 1693582624:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582652:0;tcpdump -r TCP-004.pcap -nn
+: 1693582662:0;ps aux|grep tcpdump
+: 1693582942:0;make
+: 1693582950:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693582979:0;ps aux|grep tcpdump
+: 1693583163:0;man bash
+: 1693583179:0;sudo kill -SIGTERM tcpdump
+: 1693583184:0;sudo pkill -SIGTERM tcpdump
+: 1693583187:0;ps aux
+: 1693583190:0;make
+: 1693583191:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583204:0;ps aux|grep tcpdump
+: 1693583452:0;ls
+: 1693583457:0;rm *.pcap
+: 1693583459:0;make
+: 1693583460:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583474:0;tcpdump -r TCP-000.pcap
+: 1693583526:0;sc "*.c" "grep 1069"
+: 1693583530:0;sc "*.h" "grep 1069"
+: 1693583543:0;sc "*" "grep 1069"
+: 1693583610:0;sc "*.c" "grep connect_TUv1"
+: 1693583646:0;make
+: 1693583648:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583659:0;make
+: 1693583660:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583675:0;tcpdump -r TCP-002.pcap -nn
+: 1693583679:0;tcpdump -r TCP-003.pcap -nn
+: 1693583718:0;make
+: 1693583723:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583744:0;tcpdump -r TCP-004.pcap -nn
+: 1693583774:0;make
+: 1693583775:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583787:0;tcpdump -r TCP-005.pcap -nn
+: 1693583803:0;make
+: 1693583806:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583824:0;make
+: 1693583825:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583833:0;tcpdump -r TCP-007.pcap -nn
+: 1693583843:0;make
+: 1693583845:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583859:0;tcpdump -r TCP-008.pcap -nn
+: 1693583913:0;make
+: 1693583915:0;./connect_TUv1 -4 -p tcp -c 1069 -n -w
+: 1693583925:0;tcpdump -r TCP-009.pcap -nn
+: 1693583929:0;./connect_TUv1 -4 -p tcp -c 1069 -w
+: 1693583939:0;sudo tcpdump -r TCP-010.pcap -nn
+: 1693583941:0;sudo tcpdump -r TCP-010.pcap
+: 1693583976:0;make
+: 1693583981:0;tcpdump -i lo -nn
+: 1693583985:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693583998:0;ls
+: 1693584005:0;tcpdump -r TCP-011.pcap -nn
+: 1693584074:0;make
+: 1693584076:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584085:0;tcpdump -r TCP-012.pcap -nn
+: 1693584105:0;make
+: 1693584107:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584130:0;tcpdump -r TCP-013.pcap -nn
+: 1693584348:0;bash -c 'echo $$ && exec tcpdump -i lo -nn'
+: 1693584360:0;ps aux|grep tcpdump
+: 1693584433:0;make
+: 1693584436:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584448:0;tcpdump -r TCP-014.pcap -nn
+: 1693584463:0;make
+: 1693584465:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584485:0;tcpdump -i TCP-014.pcap -nn
+: 1693584490:0;tcpdump -r TCP-014.pcap -nn
+: 1693584492:0;make clean
+: 1693584493:0;make
+: 1693584498:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584506:0;tcpdump -r TCP-015.pcap -nn
+: 1693584572:0;man 2 read
+: 1693584589:0;make
+: 1693584620:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584646:0;make
+: 1693584647:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584658:0;tcpdump -r TCP-018.pcap -nn
+: 1693584686:0;make
+: 1693584689:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584718:0;make
+: 1693584719:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584744:0;/bin/sh -c 'echo $$ && exec tcpdump -i lo -nn port 1069 -w a.pcap'
+: 1693584751:0;/bin/sh -c 'echo $$ && exec tcpdump -i lo -nn port 1069 -w a.pcap' 2>/dev/null
+: 1693584757:0;./connect_TUv1 -4 -p tcp -c 1069 -nn
+: 1693584765:0;/bin/sh -c 'echo $$ && exec tcpdump -i lo -nn port 1069 -w a.pcap' 
+: 1693584767:0;./connect_TUv1 -4 -p tcp -c 1069 -nn
+: 1693584775:0;/bin/sh -c 'echo $$ && exec tcpdump -i lo -nn port 1069 ' 
+: 1693584777:0;./connect_TUv1 -4 -p tcp -c 1069 -nn
+: 1693584782:0;/bin/sh -c 'echo $$ && exec tcpdump -i lo -nn port 1069 -w a.pcap' 2>/dev/null
+: 1693584806:0;make
+: 1693584808:0;./connect_TUv1 -4 -p tcp -c 1069 -nn
+: 1693584815:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584825:0;tcpdump -r TCP-021.pcap -nn
+: 1693584837:0;make
+: 1693584839:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693584853:0;tcpdump -r TCP-022.pcap -nn
+: 1693584907:0;./connect_TUv1 -4 -p udp -c 1069 -w -n
+: 1693584916:0;tcpdump -r UDP-000.pcap -nn
+: 1693584932:0;make
+: 1693584934:0;./connect_TUv1 -4 -p udp -c 1069 -w -n
+: 1693584944:0;tcpdump -r UDP-001.pcap -nn
+: 1693584950:0;ls
+: 1693584959:0;./connect_TUv1 -4 -p udp -c 1069 -w -n
+: 1693584963:0;ls
+: 1693584975:0;make
+: 1693584977:0;./connect_TUv1 -4 -p udp -c 1069 -w -n
+: 1693584981:0;ls
+: 1693584983:0;tcpdump -r UDP-001.pcap -nn
+: 1693585013:0;make
+: 1693585016:0;./connect_TUv1 -4 -p udp -c 1069 -w -n
+: 1693585039:0;./connect_TUv1 -4 -p udp -c 1069 -w
+: 1693585047:0;tcpdump -r UDP-003.pcap -nn
+: 1693585052:0;make clean
+: 1693585056:0;ls
+: 1693585242:0;make
+: 1693585245:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693585255:0;tcpdump -r TCP-000.pcap -nn
+: 1693585260:0;make
+: 1693585261:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693585269:0;tcpdump -r TCP-001.pcap -nn
+: 1693586155:0;ls
+: 1693586157:0;make clean
+: 1693586158:0;make
+: 1693586161:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693586171:0;ps aux|grep tcpdump
+: 1693586175:0;sudo pkill -SIGTERM tcpdump
+: 1693586179:0;make clean
+: 1693586193:0;make
+: 1693586194:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693586203:0;ls
+: 1693586214:0;tcpdump -r TCP-000.pcap -nn
+: 1693586222:0;make
+: 1693586223:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693586233:0;tcpdump -r TCP-001.pcap -nn
+: 1693586235:0;ls
+: 1693586253:0;make
+: 1693586263:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693586270:0;ls
+: 1693586273:0;tcpdump -r TCP-002.pcap -nn
+: 1693586300:0;make
+: 1693586301:0;./connect_TUv1 -4 -p tcp -c 1069 -w -n
+: 1693586311:0;tcpdump -r TCP-003.pcap -nn
+: 1693586322:0;echo $$ && exec tcpdump
+: 1693586786:0;man sctp_recvmsg
+: 1693586989:0;man sctp_sendmsg
+: 1693587732:0;make
+: 1693587964:0;tcpdump -i -nn
+: 1693587966:0;tcpdump -i lo -nn
+: 1693587968:0;./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588129:0;make
+: 1693588339:0;./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588342:0;strace ./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588452:0;make
+: 1693588453:0;strace ./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588461:0;./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588473:0;tcpdump -r SCTP-005.pcap -nn
+: 1693588562:0;make
+: 1693588565:0;./connect_TUv1 -4 -p sctp -c 1069 -w
+: 1693588574:0;./connect_TUv1 -4 -p sctp -c 1069 -w -n
+: 1693589632:0;make
+: 1693591523:0;./connect_TUv1 -4 -p dccp -c 1069 -w -n
+: 1693591557:0;make
+: 1693591559:0;./connect_TUv1 -4 -p dccp -c 1069 -w -n
+: 1693591567:0;./connect_TUv1 -4 -p dccp -c 1069 -w 
+: 1693602690:0;cd ..
+: 1693602690:0;ls
+: 1693602693:0;cd multi_connect
+: 1693602693:0;l;s
+: 1693602759:0;gcc connect.c connect_TUv1.c
+: 1693602764:0;gcc connect.c connect_TUv1.c -o a
+: 1693602842:0;man inet_addr
+: 1693602875:0;gcc connect.c connect_TUv1.c -o a
+: 1693602877:0;./a
+: 1693602916:0;gcc connect.c connect_TUv1.c -o a
+: 1693602925:0;./a
+: 1693602966:0;gcc connect.c connect_TUv1.c -o a
+: 1693602980:0;./a
+: 1693602999:0;gcc connect.c connect_TUv1.c -o a
+: 1693602999:0;./a
+: 1693603020:0;gcc connect.c connect_TUv1.c -o a
+: 1693603046:0;man 2 close
+: 1693603052:0;gcc connect.c connect_TUv1.c -o a
+: 1693603053:0;./a
+: 1693603166:0;gcc connect.c connect_TUv1.c -o a
+: 1693603173:0;./a
+: 1693603206:0;gcc connect.c connect_TUv1.c -o a
+: 1693603207:0;./a
+: 1693603239:0;gcc connect.c connect_TUv1.c -o a
+: 1693603241:0;./a
+: 1693603312:0;gcc connect.c connect_TUv1.c -o a
+: 1693603313:0;./a
+: 1693603531:0;gcc connect.c connect_TUv1.c -o a
+: 1693603532:0;./a
+: 1693632709:0;cd linux-6.4.12
+: 1693632721:0;sc "*.c" "grep connect_TUv1"
+: 1693632728:0;cd net
+: 1693632736:0;sc "*.c" "grep get_port\("
+: 1693632752:0;sc "*.c" "grep get_port_TUv1\("
+: 1693632770:0;sc "*.c" "grep connect_TUv1"
+: 1693632774:0;sc "*.c" "grep connect_TUv1\("
+: 1693632828:0;sc "*.c" "grep local|grep range"
+: 1693632841:0;sc "*.c" "grep local|grep range|grep TUv1"
+: 1693632891:0;sc "*.c" "grep connect_TUv1\("
+: 1693632984:0;sc "*.c" "grep autobind_TUv1\("
+: 1693633032:0;sc "*.c" "grep connect_TUv1"
+: 1693633145:0;sc "*.c" "grep get_port\ ="
+: 1693633558:0;git log
+: 1693633570:0;cd linux-6.4.12
+: 1693633571:0;git diff .
+: 1693633574:0;git log
+: 1693633579:0;git diff 8687d4 d8073d7e
+: 1693669764:0;cd connect_TUv1
+: 1693669765:0;make clean
+: 1693669766:0;ls
+: 1693669786:0;make clean
+: 1693669788:0;ls
+: 1693669834:0;make clean
+: 1693669836:0;git diff .
+: 1693669946:0;git log
+: 1693669952:0;git add .
+: 1693669959:0;git commit -m 'SCTP and DCCP seems OK'
+: 1693669990:0;make
+: 1693669993:0;make clean
+: 1693669995:0;git reset --soft HEAD^
+: 1693669996:0;git add .
+: 1693669998:0;git commit -m 'SCTP and DCCP seems OK'
+: 1693670020:0;git reset --soft HEAD^
+: 1693670021:0;git add .
+: 1693670022:0;git commit -m 'SCTP and DCCP seems OK'
+: 1693670285:0;ls
+: 1693670287:0;cd example2
+: 1693670292:0;touch common.h
+: 1693670441:0;ls
+: 1693670442:0;cd ..
+: 1693670443:0;ls
+: 1693670444:0;make
+: 1693670446:0;ls
+: 1693670448:0;ls connect_TUv1
+: 1693670451:0;make clean
+: 1693670467:0;ls co
+: 1693670468:0;ls
+: 1693670502:0;ls example2
+: 1693670518:0;git log
+: 1693670569:0;ls
+: 1693670728:0;make
+: 1693670729:0;ls
+: 1693670730:0;make clean
+: 1693670731:0;ls
+: 1693670733:0;ls connect_TUv1
+: 1693670734:0;make
+: 1693670748:0;ls
+: 1693670755:0;make clean
+: 1693670756:0;make connect_TUv1
+: 1693670758:0;ls
+: 1693670767:0;make connect_TUv1
+: 1693670768:0;ls
+: 1693670769:0;ls connect_TUv1
+: 1693670773:0;make clean
+: 1693670775:0;make connect_TUv1
+: 1693670777:0;ls connect_TUv1
+: 1693670779:0;make clean
+: 1693670780:0;ls connect_TUv1
+: 1693672294:0;cd ..
+: 1693672297:0;cd connect_TUv1
+: 1693672297:0;ls
+: 1693672298:0;make
+: 1693672384:0;ls
+: 1693672388:0;cd same_source/
+: 1693672388:0;ls
+: 1693672418:0;rm connect_TUv1 connect_TUv1.o
+: 1693672418:0;ls
+: 1693672419:0;cd ..
+: 1693672420:0;make
+: 1693672457:0;ls
+: 1693672459:0;./same_source/same_source
+: 1693672463:0;./same_source/same_source -c 12345
+: 1693672472:0;ping 1.1.1.1
+: 1693672530:0;make
+: 1693672532:0;./same_source/same_source -c 12345
+: 1693672541:0;make
+: 1693672543:0;./same_source/same_source -c 12345
+: 1693672549:0;ifconfig
+: 1693672565:0;make
+: 1693672567:0;./same_source/same_source -c 12345
+: 1693672653:0;make
+: 1693672655:0;./same_source/same_source -c 12345
+: 1693673155:0;man connec
+: 1693673156:0;man connect
+: 1693673164:0;make
+: 1693673167:0;./same_source/same_source -c 12345
+: 1693673171:0;strace ./same_source/same_source -c 12345
+: 1693673185:0;make
+: 1693673186:0;strace ./same_source/same_source -c 12345
+: 1693673225:0;make
+: 1693673228:0;./same_source/same_source -c 12345
+: 1693673245:0;make
+: 1693673289:0;./same_source/same_source -c 12345
+: 1693673300:0;cd same_source
+: 1693673301:0;make
+: 1693673308:0;./same_source -c 12345
+: 1693673311:0;make
+: 1693673346:0;strace ./same_source -c 12345
+: 1693673364:0;make
+: 1693673444:0;./same_source -c 12345
+: 1693673479:0;make
+: 1693673481:0;./same_source -c 12345
+: 1693673488:0;./same_source -c 54321
+: 1693673504:0;ss -a
+: 1693673508:0;ss -an
+: 1693673514:0;ss -anpt
+: 1693673522:0;ss -ant
+: 1693673527:0;make
+: 1693673529:0;ss -ant
+: 1693673531:0;./same_source -c 54321
+: 1693673538:0;./same_source -c 1234
+: 1693673554:0;make
+: 1693673555:0;./same_source -c 1234
+: 1693673558:0;./same_source -c 4321
+: 1693673585:0;make
+: 1693673597:0;./same_source -c 5342
+: 1693673615:0;make
+: 1693673616:0;./same_source -c 5342
+: 1693673620:0;./same_source -c 7593
+: 1693673642:0;cd ..
+: 1693673644:0;make clean
+: 1693673644:0;ls
+: 1693673646:0;ls connect_TUv1
+: 1693673648:0;ls same_source
+: 1693673648:0;ls
+: 1693673652:0;git add .
+: 1693673665:0;git commit -m 'ass same source example'
+: 1693673668:0;git log
+: 1693673673:0;make clean
+: 1693673676:0;rm -rf .git
+: 1693673679:0;git init .
+: 1693673710:0;git add .
+: 1693673739:0;git commit -m 'connect_TUv1(): support TCP, UDP, SCTP, DCCP protocol'
+: 1693673755:0;git remote add origin git@github.com:QbsuranAlang/connect_TUv1.git
+: 1693673758:0;git push -u origin main
+: 1693673812:0;gpg --full-generate-key
+: 1693673878:0;ls
+: 1693673891:0;cat /dev/random
+: 1693673897:0;cat /dev/urandom
+: 1693673948:0;gpg --full-generate-key
+: 1693674035:0;gpg --list-secret-keys --keyid-format=long
+: 1693674104:0;gpg --armor --export rsa3072/D371E84C3A64C2D8
+: 1693674112:0;gpg --armor --export 37CFB744159CA3DD4703A795D371E84C3A64C2D8
+: 1693674188:0;sudo apt search gpg
+: 1693674196:0;sudo apt install gpg
+: 1693674346:0;sudo apt search gpg2
+: 1693674353:0;sudo apt install gpg2
+: 1693674360:0;sudo apt install gnupg2
+: 1693674368:0;gpg2 --expert --full-gen-key
+: 1693674431:0;gpg2 --armor --export 7F2D95252D9433C0866409C7D5AFDC1C02AE9024
+: 1693674451:0;gpg --list-keys
+: 1693674503:0;gpg --list-secret-keys
+: 1693674521:0;gpg --delete-secret-key 37CFB744159CA3DD4703A795D371E84C3A64C2D8
+: 1693674539:0;gpg --list-secret-keys
+: 1693674624:0;exit
+: 1693674637:0;ls
+: 1693674702:0;cd multi_connect
+: 1693674703:0;ls
+: 1693674710:0;cd ..
+: 1693674713:0;rm -rf multi_connect
+: 1693674713:0;ls
+: 1693674716:0;cd connect_TUv1
+: 1693674717:0;ls
+: 1693674722:0;rm -rf .git
+: 1693674724:0;git init .
+: 1693674725:0;git add .
+: 1693674728:0;git commit -m 'connect_TUv1(): support TCP, UDP, SCTP, DCCP protocol'
+: 1693674735:0;git remote add origin git@github.com:QbsuranAlang/connect_TUv1.git
+: 1693674805:0;gpg --list-secret-keys
+: 1693674815:0;git config --global user.signingkey 7F2D95252D9433C0866409C7D5AFDC1C02AE9024
+: 1693674823:0;git config --global commit.gpgsign true
+: 1693674901:0;git config --list
+: 1693674907:0;rm -rf .git
+: 1693674908:0;git add .
+: 1693674911:0;git init .
+: 1693674912:0;git add .
+: 1693674916:0;git commit -m 'connect_TUv1(): support TCP, UDP, SCTP, DCCP protocol'
+: 1693674949:0;gpg2 --expert --full-gen-key
+: 1693674980:0;gpg --list-secret-keys
+: 1693674993:0;gpg --delete-secret-key 7F2D95252D9433C0866409C7D5AFDC1C02AE9024
+: 1693675004:0;gpg --list-secret-keys
+: 1693675018:0;gpg --armor --export C51D05C1CDF8F59775B3687D56EF04BCDE79B3C8
+: 1693675038:0;git commit -m 'connect_TUv1(): support TCP, UDP, SCTP, DCCP protocol'
+: 1693675056:0;git config --global user.signingkey C51D05C1CDF8F59775B3687D56EF04BCDE79B3C8
+: 1693675058:0;git commit -m 'connect_TUv1(): support TCP, UDP, SCTP, DCCP protocol'
+: 1693675062:0;git push -u origin main
+: 1693675064:0;git remote add origin git@github.com:QbsuranAlang/connect_TUv1.git
+: 1693675152:0;cd ..
+: 1693675153:0;ls
+: 1693675167:0;sudo mv /usr/src linux-6.4.12
+: 1693675169:0;cd /usr/src
+: 1693675171:0;cd linux-6.4.12
+: 1693675174:0;cd ..
+: 1693675175:0;ls
+: 1693675182:0;sudo mv linux-6.4.12 /usr/src
+: 1693675183:0;cd /usr/src
+: 1693675186:0;du -h -d 1 .
+: 1693675198:0;ls
+: 1693675200:0;pwd
+: 1693675209:0;cd ..
+: 1693675209:0;ls
+: 1693675211:0;ls src
+: 1693675222:0;ls ~
+: 1693675236:0;cd src
+: 1693675236:0;ls
+: 1693675238:0;git diff .
+: 1693675241:0;cd ..
+: 1693675242:0;ls
+: 1693675250:0;sudo mv src linux-6.4.12
+: 1693675251:0;ls
+: 1693675257:0;sudo mkdir src
+: 1693675257:0;ls -la
+: 1693675267:0;mv linux-6.4.12 src
+: 1693675269:0;sudo mv linux-6.4.12 src
+: 1693675273:0;cd src
+: 1693675273:0;ls
+: 1693675275:0;cd linux-6.4.12
+: 1693675276:0;ls
+: 1693675277:0;git diff .
+: 1693675283:0;make distclean
+: 1693675294:0;sudo make distclean
+: 1693675307:0;git diff .
+: 1693675309:0;git add .
+: 1693675317:0;git commit -m 'empty'
+: 1693675323:0;ls
+: 1693675327:0;ls src
+: 1693675335:0;mv src/* /usr/src
+: 1693675338:0;sudo mv src/* /usr/src
+: 1693675344:0;ls /usr/src
+: 1693675345:0;ls
+: 1693675351:0;git reset --hard 046a6a
+: 1693675354:0;git reset --soft HEAD^
+: 1693675361:0;vim ~/.zshrc
+: 1693675367:0;vim ~/.zsh_history
+: 1693675375:0;git diff .
+: 1693675383:0;git add .
+: 1693675386:0;git commit -m 'empty'
+: 1693675389:0;git log
+: 1693675398:0;git rebase --exec "git commit --amend --no-edit -n -S" -i --root
+: 1693675567:0;cd ..
+: 1693675567:0;ls
+: 1693675568:0;cd
+: 1693675569:0;ls
+: 1693675572:0;rm a a.c
+: 1693675578:0;rm connect_TUv1.patch
+: 1693675578:0;ls
+: 1693675601:0;rm dccp.pcap
+: 1693675602:0;ls
+: 1693675610:0;cd sctp_socket_example
+: 1693675613:0;/usr/src/linux-
+: 1693675615:0;/usr/src/linux-6.4.12
+: 1693675615:0;ls
+: 1693675619:0;git log
+: 1693675626:0;cd /usr/src
+: 1693675629:0;cd linux-6.4.12
+: 1693675638:0;git diff 2a57b20 b3d387f6
+: 1693675651:0;rm patch/connect_TUv1.patch
+: 1693675655:0;git diff 2a57b20 b3d387f6 > patch/connect_TUv1.patch
+: 1693675660:0;vim patch/connect_TUv1.patch
+: 1693675670:0;cp patch/connect_TUv1.patch ~/
+: 1693675713:0;git add .
+: 1693675721:0;git commit -m 'patch: update connect_TUv1.patch'
+: 1693675755:0;ls
+: 1693675756:0;cd ..
+: 1693675756:0;ls
+: 1693675762:0;sudo mv linux-6.4.12 ~
+: 1693675764:0;cd 
+: 1693675765:0;cd linux-6.4.12
+: 1693675766:0;ls
+: 1693675773:0;cd net
+: 1693675778:0;sc "*.c" "grep connect_TUv1"
+: 1693675817:0;cd ..
+: 1693675817:0;ls
+: 1693675819:0;./fully_build
+: 1693676319:0;cd net
+: 1693676325:0;sc "*.c" "grep EOPNOTSUPP"
+: 1693676411:0;sc "*.c" "grep nfc_llcp_send_connect"
+: 1693676607:0;sc "*.c" "grep vcc_connect"
+: 1693676721:0;cd ..
+: 1693676722:0;git log
+: 1693676727:0;git reset --soft HEAD^
+: 1693676730:0;rm patch/connect_TUv1.patch
+: 1693676731:0;git log
+: 1693676718:12;make distclean
+: 1693676743:0;git diff 2a57b200ce b3d387f61
+: 1693676764:0;git diff 2a57b200ce b3d387f61 > patch/connect_TUv1.patch
+: 1693676770:0;git log
+: 1693676773:0;git add .
+: 1693676775:0;git commit -m 'patch: update connect_TUv1.patch'
+: 1693676958:0;git log
+: 1693676969:0;rm patch/connect_TUv1.patch
+: 1693676972:0;git reset --soft HEAD^
+: 1693676973:0;git log
+: 1693677024:0;cd net
+: 1693677028:0;sc "*.c" "grep sctp_get_port_local_TUv1"
+: 1693677281:0;sc "*.c" "grep autobind"
+: 1693677366:0;cd ..
+: 1693677371:0;make distclean
+: 1693677386:0;git log
+: 1693677394:0;git add .
+: 1693677400:0;git commit -m 'README: update README.md'
+: 1693677403:0;git diff .
+: 1693677405:0;git log
+: 1693677414:2;git diff 2a57b200c 0547e6e368
+: 1693677419:0;git diff 2a57b200c 0547e6e368 > 
+: 1693677424:0;git diff 2a57b200c 0547e6e368 > patch/connect_TUv1.patch
+: 1693677426:0;git add .
+: 1693677430:0;git commit -m 'patch: update connect_TUv1.patch'
+: 1693677435:0;git push -u origin main
+: 1693677437:0;exit
+: 1693677439:0;ls
+: 1693677441:0;./fully_build
+: 1693681300:0;exit
+: 1693736673:0;cd linux-6.4.12
+: 1693736674:0;ls
+: 1693736676:0;cd ..
+: 1693736677:0;ls
+: 1693736684:0;sudo mv linux-6.4.12 /usr/src
+: 1693736684:0;ls
+: 1693736697:0;cd /usr/src/linux-6.4.12
+: 1693736702:0;sc "*.c" "grep splice"
+: 1693736732:0;cd /usr/src/linux-6.4.12
+: 1693736735:0;cd net/
+: 1693736736:0;ls
+: 1693736738:0;vim socket.c
+: 1693736766:0;cd ..
+: 1693736775:0;sc "*.c" "grep SYSCALL_DEFINE|grep splice"
+: 1693736779:0;exit
+: 1693736784:0;cd /usr/src
+: 1693736788:0;cd linux-
+: 1693736790:0;cd linux-6.4.12
+: 1693736812:0;grep sc "*.c" "grep SYSCALL_DEFINE"
+: 1693736818:0;sc "*.c" "grep SYSCALL_DEFINE"
+: 1693737099:0;vim net/socket.c
+: 1693737118:0;vim fs/splice.c
+: 1693737186:0;exit
+: 1693765050:0;cd /usr/src/linux-6.4.12
+: 1693765050:0;ls
+: 1693765054:0;make distclean
+: 1693765068:0;vim README.md
+: 1693765081:0;git add .
+: 1693765087:0;git commit -m 'README: update README.md'
+: 1693765089:0;git push -u origin main
+: 1693765103:0;exit
+: 1694164771:0;du -h -d 1 /
