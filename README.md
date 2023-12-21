@@ -233,3 +233,18 @@ Copy `Packages` directory to `/home/tutu/.config/sublime-text`
     "translate_tabs_to_spaces": true
 }
 ```
+
+<h2>23. mac wifi driver</h2>
+
+```
+$ lspci -nnk|grep 0280 -A3
+e5:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter [14e4:4464] (rev 04)
+    Subsystem: Apple Inc. BCM4364 802.11ac Wireless Network Adapter [106b:07bf]
+    Kernel modules: brcmfmac
+e6:00.0 Mass storage controller [0180]: Apple Inc. ANS2 NVMe Controller [106b:2005] (rev 01)
+
+
+`106b:07bf`
+$ wget https://packages.aunali1.com/apple/wifi-fw/18G2022/C-4364__s-B2/kauai.trx
+$ sudo cp kauai.trx /lib/firmware/brcm/brcmfmac4364-pcie.bin
+```
