@@ -1,0 +1,33 @@
+{
+    "env": {
+        "GOPATH": "/Users/tutu/.golang",
+        "GOROOT": "/usr/local/opt/go/libexec"
+    },
+    "gscomplete_enabled": false,
+    "fmt_enabled": true,
+    "fmt_tab_indent": false,
+    "fmt_tab_width": 4,
+
+    "autocomplete_snippets": true,
+    "autocomplete_tests": false,
+    "autocomplete_builtins": false,
+    "autocomplete_closures": true,
+    "autocomplete_suggest_imports": false,
+    "calltips": true,
+    "use_named_imports": true,
+    "autoinst": true,
+    "ipc_timeout": 1,
+    "fmt_cmd": ["goimports"],
+    "on_save": [
+        {"cmd": "gs_comp_lint"},
+        {"cmd": "goimports"}
+    ],
+    "lint_enabled": true,
+    "linters": [
+        {"cmd": ["go", "run"]}
+    ],
+    "comp_lint_enabled": true,
+    "comp_lint_commands": [
+        {"cmd": ["go", "install"]}
+    ]
+}

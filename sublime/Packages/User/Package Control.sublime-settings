@@ -1,0 +1,16 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Agila Theme",
+		"All Autocomplete",
+		"Autotools",
+		"Codecs33",
+		"ConvertToUTF8",
+		"nginx",
+		"Package Control"
+	]
+}
