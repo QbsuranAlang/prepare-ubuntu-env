@@ -197,3 +197,40 @@ Following https://dotblogs.com.tw/shaynling/2020/08/05/233356
 ```
 awk -F\' '$1=="menuentry " || $1=="submenu " {print i++ " : " $2}; /\smenuentry / {print "\t" i-1">"j++ " : " $2};' /boot/grub/grub.cfg
 ```
+
+22. install Sublime
+----------
+```
+$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+$ sudo apt update
+$ sudo apt install -y apt-transport-https
+$ sudo apt install -y sublime-text
+```
+
+<h3>Package install</h3>
+
+```
+"Agila Theme"
+Copy `Packages` directory to `/home/tutu/.config/sublime-text`
+```
+
+<h3>Settings</h3>
+
+```
+{
+    "color_scheme": "Packages/Agila Theme/Agila Oceanic Next.tmTheme",
+    "draw_white_space": "all",
+    "font_face": "Monaco",
+    "font_size": 14,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "show_definitions": false,
+    "tab_size": 4,
+    "theme": "Agila.sublime-theme",
+    "translate_tabs_to_spaces": true
+}
+
+```
