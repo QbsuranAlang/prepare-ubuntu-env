@@ -9,7 +9,7 @@ $ sudo reboot
 <h2>2. apt install</h2>
 
 ```
-$ sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome
+$ sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome e2fsprogs
 ```
 
 <h2>3. git</h2>
@@ -106,7 +106,7 @@ export CXX="ccache g++"
 export PATH="/usr/lib/ccache:$PATH"
 ```
 
-<h2>14. shell function</h2>
+<h2>14. ~/.zshrc</h2>
 
 ```
 function external_ip() {
