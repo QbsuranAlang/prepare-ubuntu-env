@@ -248,3 +248,27 @@ e6:00.0 Mass storage controller [0180]: Apple Inc. ANS2 NVMe Controller [106b:20
 $ wget https://packages.aunali1.com/apple/wifi-fw/18G2022/C-4364__s-B2/kauai.trx
 $ sudo cp kauai.trx /lib/firmware/brcm/brcmfmac4364-pcie.bin
 ```
+
+<h2>install KVM</h2>
+
+```
+$ sudo grep -E -c '(vmx|svm)' /proc/cpuinfo # cannot be zero
+16
+$ sudo apt install cpu-checker && kvm-ok
+INFO: /dev/kvm exists
+KVM acceleration can be used
+
+$ sudo apt install -y qemu-kvm libguestfs-tools libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf swtpm
+
+$ sudo adduser $USER libvirt
+$ sudo adduser $USER kvm
+$ sudo adduser $USER input
+$ sudo chown $USER:$USER /var/run/libvirt/libvirt-sock
+
+$ sudo systemctl enable libvirtd
+$ sudo systemctl start libvirtd
+$ sudo virsh net-start default
+$ sudo virsh net-autostart default
+
+$ virt-manager
+```
