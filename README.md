@@ -190,6 +190,7 @@ $ gpg --default-new-key-algo rsa4096 --gen-key
 $ gpg2 --list-keys --keyid-format LONG
 $ gpg --armor --export xxxxxxxxxxxxxxxxxxx
 $ git config --global user.signingkey sxxxxxxxxxxxxxxxxxxx
+$ git config --global commit.gpgsign true
 ```
 
 <h2>19. vim colors</h2>
@@ -292,4 +293,17 @@ $ sudo virsh net-start default
 $ sudo virsh net-autostart default
 
 $ virt-manager
+```
+
+<h2>26. git move head back one commit</h2>
+
+```
+$ git reset --soft HEAD~1
+```
+
+<h2>27. git GPG sign previous all commit</h2>
+
+```
+$ git rebase --exec "git commit --amend --no-edit -n -S" -i --root
+$ git push --force
 ```
