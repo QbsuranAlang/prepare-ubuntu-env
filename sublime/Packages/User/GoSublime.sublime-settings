@@ -1,7 +1,7 @@
 {
     "env": {
-        "GOPATH": "/Users/tutu/.golang",
-        "GOROOT": "/usr/local/opt/go/libexec"
+        "GOPATH": "/home/tutu/.golang",
+        "GOROOT": "/usr/local/go"
     },
     "gscomplete_enabled": false,
     "fmt_enabled": true,

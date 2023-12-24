@@ -1,0 +1,60 @@
+
+** 2023-12-24 23:25:09.643918 **:
+MarGo: MarGo build failed
+cmd: `['/usr/local/go/bin/go', 'build', '-tags', '', '-v', '-o', 'gosublime.margo_r20.06.14-1_go?.exe', 'gosublime/cmd/margo']`
+stdout: `
+
+`
+stderr: `
+go: cannot find GOROOT directory: /usr/local/opt/go/libexec
+`
+exception: `None`
+--------------------------------
+
+** 2023-12-24 23:25:32.175999 **:
+MarGo: MarGo build failed
+cmd: `['/usr/local/go/bin/go', 'build', '-tags', '', '-v', '-o', 'gosublime.margo_r20.06.14-1_go?.exe', 'gosublime/cmd/margo']`
+stdout: `
+
+`
+stderr: `
+go: cannot find GOROOT directory: /usr/local/opt/go/libexec
+`
+exception: `None`
+--------------------------------
+
+** 2023-12-24 23:29:01.106056 **:
+MarGo: MarGo build failed
+cmd: `['/usr/local/go/bin/go', 'build', '-tags', '', '-v', '-o', 'gosublime.margo_r20.06.14-1_go?.exe', 'gosublime/cmd/margo']`
+stdout: `
+
+`
+stderr: `
+go: cannot find GOROOT directory: /usr/local/opt/go/libexec
+`
+exception: `None`
+--------------------------------
+
+** 2023-12-25 02:26:18.590779 **:
+MarGo: MarGo build failed
+cmd: `['/usr/local/go/bin/go', 'build', '-tags', '', '-v', '-o', 'gosublime.margo_r20.06.14-1_go?.exe', 'gosublime/cmd/margo']`
+stdout: `
+
+`
+stderr: `
+go: cannot find GOROOT directory: /usr/local/opt/go/libexec
+`
+exception: `None`
+--------------------------------
+
+** 2023-12-25 02:28:14.980443 **:
+MarGo: MarGo build failed
+cmd: `['/usr/local/go/bin/go', 'build', '-tags', '', '-v', '-o', 'gosublime.margo_r20.06.14-1_go?.exe', 'gosublime/cmd/margo']`
+stdout: `
+
+`
+stderr: `
+go: cannot find GOROOT directory: /usr/local/opt/go/libexec
+`
+exception: `None`
+--------------------------------
