@@ -9,10 +9,16 @@ $ sudo reboot
 <h2>2. apt install</h2>
 
 ```
-$ sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome e2fsprogs
+$ sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome e2fsprogs apt-transport-https
 ```
 
-<h2>3. git</h2>
+<h2>3. ubuntu pro</h2>
+
+```
+$ sudo pro attach
+```
+
+<h2>4. git</h2>
 
 ```
 $ git config --global init.defaultBranch main
@@ -22,69 +28,73 @@ $ git config --global core.editor vim
 $ git config --global gpg.program gpg2
 ```
 
-<h2>4. sudoers</h2>
+<h2>5. sudoers</h2>
 
 ```
-$ echo "tutu ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers
+$ echo "tutu ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers > /dev/null
 ```
 
-<h2>5. ssh</h2>
+<h2>6. ssh</h2>
 
 ```
 $ sudo systemctl restart ssh
 $ sudo systemctl enable ssh
 ```
 
-<h2>6. tcpdump</h2>
+<h2>7. tcpdump</h2>
 
 ```
 $ sudo setcap cap_net_raw,cap_net_admin+eip `which tcpdump`
 ```
 
-<h2>7. ssh config</h2>
+<h2>8. ssh config</h2>
 
 ```
 $ sudo vim /etc/ssh/sshd_config
 
 PermitRootLogin no
+
+$ sudo systemctl restart ssh
 ```
 
-<h2>8. ssh keys</h2>
+<h2>9. ssh keys</h2>
 
 ```
 $ ssh-keygen
 $ ssh-keygen -t ed25519
 ```
 
-<h2>9. change root password</h2>
+<h2>10. change root password</h2>
 
 ```
 $ sudo passwd root
 ```
 
-<h2>10. install zsh</h2>
+<h2>11. install zsh</h2>
 
 ```
 $ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 $ sudo apt install zsh
 $ chsh -s /bin/zsh
-$ logout
+$ kill `echo $(who -u) | awk '{print $6}'` # logout
 ```
 
-<h2>11. install golang</h2>
+<h2>12. install golang</h2>
 
 ```
 $ wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
 $ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
 
+# golang
 export GOPATH=$HOME/.golang
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
 ```
 
-<h2>12. man page</h2>
+<h2>13. man page</h2>
 
 ```
+# colors for man pages
 export LESS_TERMCAP_mb=$'\E[38;5;167m'  # begin blinking
 export LESS_TERMCAP_md=$'\E[38;5;39m'   # begin bold
 export LESS_TERMCAP_me=$'\E[38;5;231m'  # end mode
@@ -94,11 +104,12 @@ export LESS_TERMCAP_ue=$'\E[38;5;231m'  # end underline
 export LESS_TERMCAP_us=$'\E[38;5;167m'  # begin underline
 ```
 
-<h2>13. ccache</h2>
+<h2>14. ccache</h2>
 
 ```
 $ ccache -M 20G
 
+# ccache
 export USE_CCACHE=1
 export CCACHE_DIR="$HOME/.ccache"
 export CC="ccache gcc"
@@ -106,9 +117,10 @@ export CXX="ccache g++"
 export PATH="/usr/lib/ccache:$PATH"
 ```
 
-<h2>14. ~/.zshrc</h2>
+<h2>15. ~/.zshrc</h2>
 
 ```
+# function
 function external_ip() {
     curl https://www.myexternalip.com/raw
 }
@@ -147,38 +159,46 @@ function sc() {
 }
 ```
 
-<h2>15. zsh settings</h2>
+<h2>16. zsh settings</h2>
 
 ```
 HISTSIZE=999999999
 SAVEHIST=$HISTSIZE
 ```
 
-<h2>16. disable apport and enable core-dump</h2>
+<h2>17. disable apport and enable core-dump</h2>
 
 ```
 $ sudo systemctl stop apport
 $ sudo systemctl disable apport
-$ echo "core.%e.%p.%t" | sudo tee /proc/sys/kernel/core_pattern
+$ echo "core.%e.%p.%t" | sudo tee /proc/sys/kernel/core_pattern > /dev/null
 ```
 
-<h2>17. github gpg</h2>
+<h2>18. github ssh/gpg</h2>
 
 ```
+# ssh
+name: tutu@tutu-ubuntu ed25519
+
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHxPvGPMpQ6FyBYCZ6bK3gODsPojB23fZWqvqfYDO3z1 tutu@tutu-ubuntu
+
+# gpg
+name: tutu@tutu-ubuntu rsa4096
+
 $ gpg --default-new-key-algo rsa4096 --gen-key
 $ gpg2 --list-keys --keyid-format LONG
 $ gpg --armor --export xxxxxxxxxxxxxxxxxxx
 ```
 
-<h2>18. vim colors</h2>
+<h2>19. vim colors</h2>
 
 ```
-$ cd ~
-$ mkdir -p ~/.vim/colors
-$ cp kolor.vim ~/.vim/colors
+$ cp -R vim ~/.vim
+$ cp vimrc ~/.vimrc
 ```
 
-<h2>19. install chrome</h2>
+<h2>20. install chrome</h2>
 
 ```
 $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -186,25 +206,24 @@ $ sudo dpkg -i google-chrome-stable_current_amd64.deb
 $ sudo apt-get install -f
 ```
 
-<h2>20. install L2TP/IPSec VPN</h2>
+<h2>21. install L2TP/IPSec VPN</h2>
 
 ```
 Following https://dotblogs.com.tw/shaynling/2020/08/05/233356
 ```
 
-<h2>21. grub list</h2>
+<h2>22. grub list</h2>
 
 ```
 awk -F\' '$1=="menuentry " || $1=="submenu " {print i++ " : " $2}; /\smenuentry / {print "\t" i-1">"j++ " : " $2};' /boot/grub/grub.cfg
 ```
 
-<h2>22. install Sublime</h2>
+<h2>23. install Sublime</h2>
 
 ```
 $ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
-$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list > /dev/null
 $ sudo apt update
-$ sudo apt install -y apt-transport-https
 $ sudo apt install -y sublime-text
 ```
 
@@ -212,7 +231,8 @@ $ sudo apt install -y sublime-text
 
 ```
 "Agila Theme"
-Copy `Packages` directory to `/home/tutu/.config/sublime-text`
+
+$ cp -R Packages ~/.config/sublime-text
 ```
 
 <h3>settings</h3>
@@ -234,7 +254,7 @@ Copy `Packages` directory to `/home/tutu/.config/sublime-text`
 }
 ```
 
-<h2>23. mac wifi driver</h2>
+<h2>24. mac wifi driver</h2>
 
 ```
 $ lspci -nnk|grep 0280 -A3
@@ -249,12 +269,12 @@ $ wget https://packages.aunali1.com/apple/wifi-fw/18G2022/C-4364__s-B2/kauai.trx
 $ sudo cp kauai.trx /lib/firmware/brcm/brcmfmac4364-pcie.bin
 ```
 
-<h2>install KVM</h2>
+<h2>25. install KVM</h2>
 
 ```
 $ sudo grep -E -c '(vmx|svm)' /proc/cpuinfo # cannot be zero
 16
-$ sudo apt install cpu-checker && kvm-ok
+$ sudo apt install -y cpu-checker && kvm-ok
 INFO: /dev/kvm exists
 KVM acceleration can be used
 
@@ -266,7 +286,7 @@ $ sudo adduser $USER input
 $ sudo chown $USER:$USER /var/run/libvirt/libvirt-sock
 
 $ sudo systemctl enable libvirtd
-$ sudo systemctl start libvirtd
+$ sudo systemctl restart libvirtd
 $ sudo virsh net-start default
 $ sudo virsh net-autostart default
 
