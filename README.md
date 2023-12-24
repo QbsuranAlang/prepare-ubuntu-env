@@ -187,7 +187,10 @@ ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHxPvGPMpQ6FyBYCZ6bK3gODsPojB23fZWqvqfYDO3z1
 name: tutu@tutu-ubuntu rsa4096
 
 $ gpg --default-new-key-algo rsa4096 --gen-key
-$ gpg2 --list-keys --keyid-format LONG
+# or
+$ gpg --full-generate-key
+
+$ gpg --list-secret-keys --keyid-format=long
 $ gpg --armor --export xxxxxxxxxxxxxxxxxxx
 $ git config --global user.signingkey sxxxxxxxxxxxxxxxxxxx
 $ git config --global commit.gpgsign true
