@@ -58,4 +58,4 @@ pkg/
 .fuse_hidden*
 build/
 Icon?
-
+*.deb
