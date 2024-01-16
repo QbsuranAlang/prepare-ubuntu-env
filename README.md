@@ -214,7 +214,11 @@ $ cp vimrc ~/.vimrc
 <h2>21. install L2TP/IPSec VPN</h2>
 
 ```
-Following https://dotblogs.com.tw/shaynling/2020/08/05/233356
+$ sudo apt remove --purge -y xl2tpd
+$ wget http://archive.ubuntu.com/ubuntu/pool/universe/x/xl2tpd/xl2tpd_1.3.12-1.1_amd64.deb
+$ sudo apt install -y ./xl2tpd_1.3.12-1.1_amd64.deb
+$ sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
+$ sudo systemctl restart xl2tpd
 ```
 
 <h2>22. grub list</h2>
