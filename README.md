@@ -174,7 +174,15 @@ $ sudo systemctl disable apport
 $ echo "core.%e.%p.%t" | sudo tee /proc/sys/kernel/core_pattern > /dev/null
 ```
 
-<h2>18. github ssh/gpg</h2>
+<h2>18. install chrome</h2>
+
+```
+$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+$ sudo dpkg -i google-chrome-stable_current_amd64.deb
+$ sudo apt-get install -f
+```
+
+<h2>19. github ssh/gpg</h2>
 
 ```
 # ssh
@@ -196,19 +204,11 @@ $ git config --global user.signingkey sxxxxxxxxxxxxxxxxxxx
 $ git config --global commit.gpgsign true
 ```
 
-<h2>19. vim colors</h2>
+<h2>20. vim colors</h2>
 
 ```
 $ cp -R vim ~/.vim
 $ cp vimrc ~/.vimrc
-```
-
-<h2>20. install chrome</h2>
-
-```
-$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-$ sudo dpkg -i google-chrome-stable_current_amd64.deb
-$ sudo apt-get install -f
 ```
 
 <h2>21. install L2TP/IPSec VPN</h2>
