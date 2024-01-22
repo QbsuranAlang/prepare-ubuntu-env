@@ -1,89 +1,89 @@
 <h2>1. first apt jobs</h2>
 
 ```
-$ sudo apt -y update
-$ sudo apt -y upgrade
-$ sudo reboot
+sudo apt -y update
+sudo apt -y upgrade
+sudo reboot
 ```
 
 <h2>2. apt install</h2>
 
 ```
-$ sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome e2fsprogs apt-transport-https tree dconf-editor
+sudo apt install -y bc bison build-essential ccache curl fakeroot flex gcc-multilib git gnupg2 libelf-dev libffi-dev libjpeg8-dev libncurses5 libncurses5-dev libssl-dev libxml2-dev libxslt1-dev ncurses-dev net-tools ntfs-3g openssh-server python-pip valgrind vim wget wget2 xz-utils zlib1g-dev zsh network-manager-l2tp network-manager-l2tp-gnome e2fsprogs apt-transport-https tree dconf-editor
 ```
 
 <h2>3. ubuntu pro</h2>
 
 ```
-$ sudo pro attach
+sudo pro attach
 ```
 
 <h2>4. git</h2>
 
 ```
-$ git config --global init.defaultBranch main
-$ git config --global user.email jr89197@hotmail.com
-$ git config --global user.name QbsuranAlang
-$ git config --global core.editor vim
-$ git config --global gpg.program gpg2
+git config --global init.defaultBranch main
+git config --global user.email jr89197@hotmail.com
+git config --global user.name QbsuranAlang
+git config --global core.editor vim
+git config --global gpg.program gpg2
 ```
 
 <h2>5. sudoers</h2>
 
 ```
-$ echo "tutu ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers > /dev/null
+echo "tutu ALL=(ALL) NOPASSWD:ALL" | sudo tee -a /etc/sudoers > /dev/null
 ```
 
 <h2>6. ssh</h2>
 
 ```
-$ sudo systemctl restart ssh
-$ sudo systemctl enable ssh
+sudo systemctl restart ssh
+sudo systemctl enable ssh
 ```
 
 <h2>7. tcpdump</h2>
 
 ```
-$ sudo setcap cap_net_raw,cap_net_admin+eip `which tcpdump`
+sudo setcap cap_net_raw,cap_net_admin+eip `which tcpdump`
 ```
 
 <h2>8. ssh config</h2>
 
 ```
-$ sudo vim /etc/ssh/sshd_config
+sudo vim /etc/ssh/sshd_config
 
 PermitRootLogin no
 
-$ sudo systemctl restart ssh
+sudo systemctl restart ssh
 ```
 
 <h2>9. ssh keys</h2>
 
 ```
-$ ssh-keygen
-$ ssh-keygen -t ed25519
+ssh-keygen
+ssh-keygen -t ed25519
 ```
 
 <h2>10. change root password</h2>
 
 ```
-$ sudo passwd root
+sudo passwd root
 ```
 
 <h2>11. install zsh</h2>
 
 ```
-$ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-$ sudo apt install zsh
-$ chsh -s /bin/zsh
-$ kill `echo $(who -u) | awk '{print $6}'` # logout
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sudo apt install zsh
+chsh -s /bin/zsh
+kill `echo $(who -u) | awk '{print $6}'` # logout
 ```
 
 <h2>12. install golang</h2>
 
 ```
-$ wget https://go.dev/dl/go1.21.5.linux-amd64.tar.gz
-$ sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.21.6.linux-amd64.tar.gz
 
 # golang
 export GOPATH=$HOME/.golang
@@ -107,7 +107,7 @@ export LESS_TERMCAP_us=$'\E[38;5;167m'  # begin underline
 <h2>14. ccache</h2>
 
 ```
-$ ccache -M 20G
+ccache -M 20G
 
 # ccache
 export USE_CCACHE=1
@@ -169,17 +169,17 @@ SAVEHIST=$HISTSIZE
 <h2>17. disable apport and enable core-dump</h2>
 
 ```
-$ sudo systemctl stop apport
-$ sudo systemctl disable apport
-$ echo "core.%e.%p.%t" | sudo tee /proc/sys/kernel/core_pattern > /dev/null
+sudo systemctl stop apport
+sudo systemctl disable apport
+echo "core.%e.%p.%t" | sudo tee /proc/sys/kernel/core_pattern > /dev/null
 ```
 
 <h2>18. install chrome</h2>
 
 ```
-$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-$ sudo dpkg -i google-chrome-stable_current_amd64.deb
-$ sudo apt-get install -f
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt-get install -f
 ```
 
 <h2>19. github ssh/gpg</h2>
@@ -188,37 +188,37 @@ $ sudo apt-get install -f
 # ssh
 name: tutu@tutu-ubuntu ed25519
 
-$ cat ~/.ssh/id_ed25519.pub
+cat ~/.ssh/id_ed25519.pub
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHxPvGPMpQ6FyBYCZ6bK3gODsPojB23fZWqvqfYDO3z1 tutu@tutu-ubuntu
 
 # gpg
 name: tutu@tutu-ubuntu rsa4096
 
-$ gpg --default-new-key-algo rsa4096 --gen-key
+gpg --default-new-key-algo rsa4096 --gen-key
 # or
-$ gpg --full-generate-key
+gpg --full-generate-key
 
-$ gpg --list-secret-keys --keyid-format=long
-$ gpg --armor --export xxxxxxxxxxxxxxxxxxx
-$ git config --global user.signingkey sxxxxxxxxxxxxxxxxxxx
-$ git config --global commit.gpgsign true
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export xxxxxxxxxxxxxxxxxxx
+git config --global user.signingkey sxxxxxxxxxxxxxxxxxxx
+git config --global commit.gpgsign true
 ```
 
 <h2>20. vim colors</h2>
 
 ```
-$ cp -R vim ~/.vim
-$ cp vimrc ~/.vimrc
+cp -R vim ~/.vim
+cp vimrc ~/.vimrc
 ```
 
 <h2>21. install L2TP/IPSec VPN</h2>
 
 ```
-$ sudo apt remove --purge -y xl2tpd
-$ wget http://archive.ubuntu.com/ubuntu/pool/universe/x/xl2tpd/xl2tpd_1.3.12-1.1_amd64.deb
-$ sudo apt install -y ./xl2tpd_1.3.12-1.1_amd64.deb
-$ sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
-$ sudo systemctl restart xl2tpd
+sudo apt remove --purge -y xl2tpd
+wget http://archive.ubuntu.com/ubuntu/pool/universe/x/xl2tpd/xl2tpd_1.3.12-1.1_amd64.deb
+sudo apt install -y ./xl2tpd_1.3.12-1.1_amd64.deb
+sudo apt install -y network-manager-l2tp network-manager-l2tp-gnome
+sudo systemctl restart xl2tpd
 ```
 
 <h2>22. grub list</h2>
@@ -230,10 +230,10 @@ awk -F\' '$1=="menuentry " || $1=="submenu " {print i++ " : " $2}; /\smenuentry 
 <h2>23. install Sublime</h2>
 
 ```
-$ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
-$ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list > /dev/null
-$ sudo apt update
-$ sudo apt install -y sublime-text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list > /dev/null
+sudo apt update
+sudo apt install -y sublime-text
 ```
 
 <h3>install package</h3>
@@ -241,7 +241,7 @@ $ sudo apt install -y sublime-text
 ```
 "Agila Theme"
 
-$ cp -R Packages ~/.config/sublime-text
+cp -R Packages ~/.config/sublime-text
 ```
 
 <h3>settings</h3>
@@ -266,7 +266,7 @@ $ cp -R Packages ~/.config/sublime-text
 <h2>24. mac wifi driver</h2>
 
 ```
-$ lspci -nnk|grep 0280 -A3
+lspci -nnk|grep 0280 -A3
 e5:00.0 Network controller [0280]: Broadcom Inc. and subsidiaries BCM4364 802.11ac Wireless Network Adapter [14e4:4464] (rev 04)
     Subsystem: Apple Inc. BCM4364 802.11ac Wireless Network Adapter [106b:07bf]
     Kernel modules: brcmfmac
@@ -274,43 +274,43 @@ e6:00.0 Mass storage controller [0180]: Apple Inc. ANS2 NVMe Controller [106b:20
 
 
 `106b:07bf`
-$ wget https://packages.aunali1.com/apple/wifi-fw/18G2022/C-4364__s-B2/kauai.trx
-$ sudo cp kauai.trx /lib/firmware/brcm/brcmfmac4364-pcie.bin
+wget https://packages.aunali1.com/apple/wifi-fw/18G2022/C-4364__s-B2/kauai.trx
+sudo cp kauai.trx /lib/firmware/brcm/brcmfmac4364-pcie.bin
 ```
 
 <h2>25. install KVM</h2>
 
 ```
-$ sudo grep -E -c '(vmx|svm)' /proc/cpuinfo # cannot be zero
+sudo grep -E -c '(vmx|svm)' /proc/cpuinfo # cannot be zero
 16
-$ sudo apt install -y cpu-checker && kvm-ok
+sudo apt install -y cpu-checker && kvm-ok
 INFO: /dev/kvm exists
 KVM acceleration can be used
 
-$ sudo apt install -y qemu-kvm libguestfs-tools libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf swtpm
+sudo apt install -y qemu-kvm libguestfs-tools libvirt-clients libvirt-daemon-system bridge-utils virt-manager ovmf swtpm
 
-$ sudo adduser $USER libvirt
-$ sudo adduser $USER kvm
-$ sudo adduser $USER input
-$ sudo chown $USER:$USER /var/run/libvirt/libvirt-sock
+sudo adduser $USER libvirt
+sudo adduser $USER kvm
+sudo adduser $USER input
+sudo chown $USER:$USER /var/run/libvirt/libvirt-sock
 
-$ sudo systemctl enable libvirtd
-$ sudo systemctl restart libvirtd
-$ sudo virsh net-start default
-$ sudo virsh net-autostart default
+sudo systemctl enable libvirtd
+sudo systemctl restart libvirtd
+sudo virsh net-start default
+sudo virsh net-autostart default
 
-$ virt-manager
+virt-manager
 ```
 
 <h2>26. git move head back one commit</h2>
 
 ```
-$ git reset --soft HEAD~1
+git reset --soft HEAD~1
 ```
 
 <h2>27. git GPG sign previous all commit</h2>
 
 ```
-$ git rebase --exec "git commit --amend --no-edit -n -S" -i --root
-$ git push --force
+git rebase --exec "git commit --amend --no-edit -n -S" -i --root
+git push --force
 ```
