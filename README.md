@@ -343,3 +343,14 @@ WantedBy=basic.target
 sudo systemctl daemon-reload
 sudo systemctl enable wol-enable.service
 ```
+
+<h2>30. install Teamviewer</h2>
+
+```
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo apt install -f ./teamviewer_15.50.5_amd64.deb
+sudo vim /etc/gdm3/custom.conf
+
+# uncomment
+WaylandEnable=false
+```
