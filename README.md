@@ -314,3 +314,32 @@ git reset --soft HEAD~1
 git rebase --exec "git commit --amend --no-edit -n -S" -i --root
 git push --force
 ```
+
+<h2>28. install wireshark</h2>
+
+```
+sudo apt install -f wireshark
+sudo usermod -aG wireshark $USER
+reboot
+```
+
+<h2>29. enable WOL</h2>
+
+```
+sudo ethtool -s enp3s0 wol g
+
+sudo --preserve-env systemctl edit --force --full wol-enable.service
+
+[Unit]
+Description=Enable Wake-up on LAN
+
+[Service]
+Type=oneshot
+ExecStart=/sbin/ethtool -s enp3s0 wol g
+
+[Install]
+WantedBy=basic.target
+
+sudo systemctl daemon-reload
+sudo systemctl enable wol-enable.service
+```
