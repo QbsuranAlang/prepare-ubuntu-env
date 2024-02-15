@@ -362,3 +362,11 @@ sudo apt-add-repository -y ppa:cappelikan/ppa
 sudo apt update
 sudo apt install -y mainline
 ```
+
+<h2>32. install multiple version gcc and g++</h2>
+
+```
+sudo apt install -y gcc-12 g++-12
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 12
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 12
+```
