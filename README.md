@@ -354,3 +354,11 @@ sudo vim /etc/gdm3/custom.conf
 # uncomment
 WaylandEnable=false
 ```
+
+<h2>31. kernel management</h2>
+
+```
+sudo apt-add-repository -y ppa:cappelikan/ppa
+sudo apt update
+sudo apt install -y mainline
+```
