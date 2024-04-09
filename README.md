@@ -3,7 +3,6 @@
 ```
 sudo apt -y update
 sudo apt -y upgrade
-sudo reboot
 ```
 
 <h2>2. apt install</h2>
@@ -74,7 +73,7 @@ sudo passwd root
 
 ```
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-sudo apt install zsh
+sudo apt install -y zsh
 chsh -s /bin/zsh
 kill `echo $(who -u) | awk '{print $6}'` # logout
 ```
