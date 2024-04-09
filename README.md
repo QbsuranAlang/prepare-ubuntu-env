@@ -1,4 +1,4 @@
-<h2>1. first apt jobs</h2>
+<h2>1. apt update/upgrade</h2>
 
 ```
 sudo apt -y update
